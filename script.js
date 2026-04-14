@@ -283,6 +283,27 @@
   /**
    * One rAF-batched scroll loop: page depth, hero parallax, ambient layers, demo rail, stage spotlight.
    */
+  /** Slow “breathing” pulse for EQ glow — tied to --beat-glow */
+  function initMusicPulse() {
+    var root = document.documentElement;
+    var mq =
+      typeof window.matchMedia === "function"
+        ? window.matchMedia("(prefers-reduced-motion: reduce)")
+        : { matches: false };
+
+    function tick(now) {
+      var t = typeof now === "number" ? now : performance.now();
+      if (mq.matches) {
+        root.style.setProperty("--beat-glow", "0.55");
+      } else {
+        var beat = Math.sin(t / 1000 * 2.05) * 0.5 + 0.5;
+        root.style.setProperty("--beat-glow", beat.toFixed(3));
+      }
+      requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+
   function initScrollEffects() {
     var root = document.documentElement;
     var heroBg = document.querySelector(".hero__bg");
@@ -388,6 +409,7 @@
     initNav();
     initHeaderScroll();
     initScrollEffects();
+    initMusicPulse();
     initReveal();
   });
 })();

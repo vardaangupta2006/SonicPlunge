@@ -27,6 +27,13 @@
   <div class="wave-bg" aria-hidden="true"></div>
   <div class="score-glow" aria-hidden="true"></div>
   <div class="stage-spotlight" aria-hidden="true"></div>
+  <div class="music-score-watermark" aria-hidden="true"></div>
+  <div class="music-floaties" aria-hidden="true">
+    <span class="music-floaties__n music-floaties__n--1">♪</span>
+    <span class="music-floaties__n music-floaties__n--2">♫</span>
+    <span class="music-floaties__n music-floaties__n--3">♬</span>
+    <span class="music-floaties__n music-floaties__n--4">♩</span>
+  </div>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header" role="banner">
@@ -64,7 +71,37 @@
       <div class="hero__bg" aria-hidden="true"></div>
       <div class="hero__rings" aria-hidden="true"></div>
       <div class="hero__inner">
-        <p class="hero__eyebrow reveal">Music · Sound · Installation</p>
+        <div class="hero__soundviz" aria-hidden="true">
+          <p class="hero__tempo-mark">Adagio · senza misura · rubato</p>
+          <div class="hero__eq" role="presentation">
+            <span class="hero__eq-bar"></span><span class="hero__eq-bar"></span><span class="hero__eq-bar"></span
+            ><span class="hero__eq-bar"></span><span class="hero__eq-bar"></span><span class="hero__eq-bar"></span
+            ><span class="hero__eq-bar"></span><span class="hero__eq-bar"></span><span class="hero__eq-bar"></span
+            ><span class="hero__eq-bar"></span><span class="hero__eq-bar"></span><span class="hero__eq-bar"></span
+            ><span class="hero__eq-bar"></span><span class="hero__eq-bar"></span><span class="hero__eq-bar"></span
+            ><span class="hero__eq-bar"></span><span class="hero__eq-bar"></span><span class="hero__eq-bar"></span
+            ><span class="hero__eq-bar"></span><span class="hero__eq-bar"></span>
+          </div>
+          <svg class="hero__osc" viewBox="0 0 480 56" preserveAspectRatio="none" aria-hidden="true">
+            <defs>
+              <linearGradient id="oscGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="rgba(212,167,74,0.9)" />
+                <stop offset="50%" stop-color="rgba(139,126,200,0.85)" />
+                <stop offset="100%" stop-color="rgba(201,125,143,0.75)" />
+              </linearGradient>
+            </defs>
+            <path
+              class="hero__osc-path"
+              fill="none"
+              stroke="url(#oscGrad)"
+              stroke-width="1.75"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M0,28 Q30,8 60,28 T120,28 T180,22 T240,34 T300,24 T360,30 T420,26 T480,28"
+            />
+          </svg>
+        </div>
+        <p class="hero__eyebrow reveal">Score · Resonance · Room tone</p>
         <h1 id="hero-title" class="hero__title reveal">Sonic Plunge</h1>
         <p class="hero__subtitle reveal">An automated singing bowl sound bath — built for our university music gen ed course.</p>
         <p class="hero__lede reveal">
@@ -78,12 +115,19 @@
       </div>
     </section>
 
+    <div class="staff-rule" aria-hidden="true">
+      <span class="staff-rule__gutter">𝄀</span>
+      <span class="staff-rule__lines"></span>
+      <span class="staff-rule__gutter staff-rule__gutter--end">𝄂</span>
+    </div>
+
     <section id="overview" class="section section--overview">
       <div class="section__inner">
-        <h2 class="section__title reveal">Project overview</h2>
+        <h2 class="section__title section__title--music reveal"><span class="section__title-icon" aria-hidden="true">𝄞</span> Project overview</h2>
         <p class="section__lead reveal">
           Sonic Plunge is a semester-long exploration: how to invite people into a calm, sustained listening experience
           using acoustic objects, light, and carefully timed electronics — without losing the bowls’ natural voice.
+          Think of it as a slow movement: long phrases, soft dynamics, plenty of room between attacks.
         </p>
 
         <div class="facts" aria-label="Project snapshot">
@@ -159,11 +203,12 @@
         </div>
 
         <div class="materials glass reveal">
-          <h3 class="materials__title">Materials &amp; ingredients</h3>
+          <h3 class="materials__title"><span class="materials__clef" aria-hidden="true">♭</span> Materials &amp; orchestration</h3>
           <ul class="materials__list">
             <li>
               <span class="materials__tag">Acoustic</span>
-              Multiple frosted singing bowls, soft mallets, occasional gong / room mics for reference recordings.
+              Multiple frosted singing bowls, soft mallets, occasional gong / room mics for reference recordings — our
+              “strings &amp; choir.”
             </li>
             <li>
               <span class="materials__tag">Electronics</span>
@@ -184,12 +229,19 @@
       </div>
     </section>
 
+    <div class="staff-rule staff-rule--narrow" aria-hidden="true">
+      <span class="staff-rule__gutter">𝄀</span>
+      <span class="staff-rule__lines"></span>
+      <span class="staff-rule__gutter staff-rule__gutter--end">𝄂</span>
+    </div>
+
     <section id="team" class="section section--team">
       <div class="section__inner">
-        <h2 class="section__title reveal">Team</h2>
+        <h2 class="section__title section__title--music reveal"><span class="section__title-icon" aria-hidden="true">♫</span> Ensemble</h2>
         <p class="section__lead reveal">
           The electrical side of Sonic Plunge — sensors, actuation, wiring, and iteration — is being developed by
-          <strong>us two</strong> alongside our coursework and studio time.
+          <strong>us two</strong> alongside our coursework and studio time. Two players, one arrangement, lots of
+          rehearsal-room honesty.
         </p>
         <div class="team__grid">
           <article class="team-card reveal">
@@ -222,11 +274,18 @@
       </div>
     </section>
 
+    <div class="staff-rule" aria-hidden="true">
+      <span class="staff-rule__gutter">𝄀</span>
+      <span class="staff-rule__lines"></span>
+      <span class="staff-rule__gutter staff-rule__gutter--end">𝄂</span>
+    </div>
+
     <section id="journey" class="section section--journey">
       <div class="section__inner">
-        <h2 class="section__title reveal">Build journey</h2>
+        <h2 class="section__title section__title--music reveal"><span class="section__title-icon" aria-hidden="true">𝄐</span> Build journey</h2>
         <p class="section__lead reveal">
-          A loose timeline of where we have been — not a spec sheet, just the shape of the work so far.
+          A loose timeline of where we have been — not a spec sheet, just the shape of the work so far. Each beat is a
+          rehearsal: listen, mark the score, revise.
         </p>
 
         <ol class="timeline">
@@ -360,9 +419,15 @@
       </div>
     </section>
 
+    <div class="staff-rule staff-rule--narrow" aria-hidden="true">
+      <span class="staff-rule__gutter">𝄀</span>
+      <span class="staff-rule__lines"></span>
+      <span class="staff-rule__gutter staff-rule__gutter--end">𝄂</span>
+    </div>
+
     <section id="motion" class="section section--motion" aria-labelledby="motion-title">
       <div class="section__inner">
-        <h2 id="motion-title" class="section__title reveal">Prototype in motion</h2>
+        <h2 id="motion-title" class="section__title section__title--music reveal"><span class="section__title-icon" aria-hidden="true">♩</span> Prototype in motion</h2>
         <p class="section__lead reveal">
           Scroll through this column while the demo stays pinned — an early clip from the first time the rig moved, plus
           the motor mount we iterated toward for cleaner strikes.
@@ -427,17 +492,17 @@
 
     <section id="gallery" class="section section--gallery">
       <div class="section__inner">
-        <h2 class="section__title reveal">Gallery</h2>
+        <h2 class="section__title section__title--music reveal"><span class="section__title-icon" aria-hidden="true">♯</span> Gallery</h2>
         <p class="section__lead reveal">
-          Moments from the build — bowls, light, cables, and the people behind them. Hover a thumbnail for a short line;
-          click anywhere on it for a larger view with the full caption.
+          Stills from the score — bowls, light, cables, and the people behind them. Hover a thumbnail for a cue; click for
+          the full caption, like opening a measure for a closer read.
         </p>
         <div id="gallery-main" class="gallery gallery--main" aria-label="Project photo gallery"></div>
 
-        <h3 class="gallery__subheading reveal">Documentation snapshots</h3>
+        <h3 class="gallery__subheading reveal"><span class="gallery__subheading-mark" aria-hidden="true">♪</span> Documentation &amp; sketches</h3>
         <p class="gallery__subtext reveal">
-          Class sessions, diagrams, and course materials — helpful context, separate from the studio-floor gallery above.
-          Same hover-and-click behavior as the main grid.
+          Class sessions, diagrams, and course materials — rehearsal notes from the semester, separate from the
+          studio-floor gallery above. Same hover-and-click behavior as the main grid.
         </p>
         <div id="gallery-docs" class="gallery gallery--docs" aria-label="Documentation snapshots"></div>
       </div>
@@ -445,7 +510,7 @@
 
     <section id="reflection" class="section section--reflection">
       <div class="section__inner section__inner--narrow">
-        <h2 class="section__title reveal">What we are learning</h2>
+        <h2 class="section__title section__title--music reveal"><span class="section__title-icon" aria-hidden="true">𝄌</span> Coda — what we’re learning</h2>
         <div class="reflection__body reveal">
           <p>
             Prototyping together has meant translating half-finished ideas across tables, laptops, and voice memos. We
@@ -473,12 +538,15 @@
   </main>
 
   <footer class="site-footer" role="contentinfo">
+    <div class="site-footer__barline" aria-hidden="true"></div>
     <div class="site-footer__inner">
-      <p class="site-footer__title">Sonic Plunge</p>
+      <p class="site-footer__title">Sonic Plunge <span class="site-footer__fermata" aria-hidden="true">𝄐</span></p>
       <p class="site-footer__meta">
         Carnegie Mellon · music general education · sound installation / automated singing bowl study · spring prototype
       </p>
+      <p class="site-footer__dynamics" aria-hidden="true"><span>p</span> <span>mp</span> <span>mf</span> <span>f</span></p>
       <p class="site-footer__team">Vardaan &amp; Vivaan</p>
+      <p class="site-footer__fine">Fine — project continues in the studio.</p>
       <p class="site-footer__note">
         Static site: <code>index.html</code>, <code>styles.css</code>, <code>script.js</code>, and images in
         <code>SonicPlungeImages/</code> — open locally or with Live Server. Reduced-motion preferences are respected for
