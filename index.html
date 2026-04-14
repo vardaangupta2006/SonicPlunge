@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Sonic Plunge — an automated singing bowl sound bath for a university music gen ed project." />
+  <meta name="description" content="Sonic Plunge — an automated quartz singing bowl sound-bath installation built for a Carnegie Mellon music general education course. Resonance, light, electronics, and slow time." />
   <title>Sonic Plunge — Automated Singing Bowl Sound Bath</title>
   <!--
     EDITABLE CONTENT (quick reference)
@@ -16,6 +16,7 @@
     • Reflection: #reflection section paragraphs
     • Footer: .site-footer lines
     • Image captions: GALLERY_MAIN and GALLERY_DOCS arrays in script.js
+    • Demo section: #motion — video path and motor mount image filename
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,6 +25,8 @@
 </head>
 <body>
   <div class="wave-bg" aria-hidden="true"></div>
+  <div class="score-glow" aria-hidden="true"></div>
+  <div class="stage-spotlight" aria-hidden="true"></div>
   <a class="skip-link" href="#main">Skip to content</a>
 
   <header class="site-header" role="banner">
@@ -31,11 +34,12 @@
       <a class="logo" href="#">Sonic Plunge</a>
       <nav class="nav" aria-label="Primary">
         <ul class="nav__list">
-          <li><a href="#overview">Overview</a></li>
-          <li><a href="#team">Team</a></li>
-          <li><a href="#journey">Journey</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#reflection">Reflection</a></li>
+          <li><a href="#overview" title="Goals, snapshot cards, materials">Overview</a></li>
+          <li><a href="#team" title="Who is building Sonic Plunge">Team</a></li>
+          <li><a href="#journey" title="Timeline of the build">Journey</a></li>
+          <li><a href="#motion" title="Early demo video and motor mount">Demo</a></li>
+          <li><a href="#gallery" title="Photos and documentation">Gallery</a></li>
+          <li><a href="#reflection" title="What we are learning">Reflection</a></li>
         </ul>
       </nav>
       <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
@@ -45,11 +49,12 @@
     </div>
     <div id="mobile-nav" class="mobile-nav" hidden>
       <ul class="mobile-nav__list">
-        <li><a href="#overview">Overview</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#journey">Journey</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#reflection">Reflection</a></li>
+        <li><a href="#overview" title="Goals, snapshot cards, materials">Overview</a></li>
+        <li><a href="#team" title="Who is building Sonic Plunge">Team</a></li>
+        <li><a href="#journey" title="Timeline of the build">Journey</a></li>
+        <li><a href="#motion" title="Early demo video and motor mount">Demo</a></li>
+        <li><a href="#gallery" title="Photos and documentation">Gallery</a></li>
+        <li><a href="#reflection" title="What we are learning">Reflection</a></li>
       </ul>
     </div>
   </header>
@@ -67,8 +72,8 @@
           part sonic art, part hands-on engineering, part shared experiment.
         </p>
         <div class="hero__actions reveal">
-          <a class="btn btn--primary" href="#journey">Our Journey</a>
-          <a class="btn btn--ghost" href="#gallery">View Gallery</a>
+          <a class="btn btn--primary" href="#journey" title="Scroll to the build timeline">Our Journey</a>
+          <a class="btn btn--ghost" href="#gallery" title="Open the photo grid — click any image to enlarge">View Gallery</a>
         </div>
       </div>
     </section>
@@ -76,17 +81,61 @@
     <section id="overview" class="section section--overview">
       <div class="section__inner">
         <h2 class="section__title reveal">Project overview</h2>
+        <p class="section__lead reveal">
+          Sonic Plunge is a semester-long exploration: how to invite people into a calm, sustained listening experience
+          using acoustic objects, light, and carefully timed electronics — without losing the bowls’ natural voice.
+        </p>
+
+        <div class="facts" aria-label="Project snapshot">
+          <article class="fact-card reveal">
+            <h3 class="fact-card__label">Setting</h3>
+            <p class="fact-card__value">Music gen ed · CMU studio</p>
+            <p class="fact-card__hover">Built in shared music-technology studio time with access to floorspace, carts, and room to make noise responsibly.</p>
+          </article>
+          <article class="fact-card reveal">
+            <h3 class="fact-card__label">Medium</h3>
+            <p class="fact-card__value">Quartz bowls + circuits</p>
+            <p class="fact-card__hover">Frosted singing bowls for long decays; microcontrollers and actuators to explore repeatable, gentle strikes.</p>
+          </article>
+          <article class="fact-card reveal">
+            <h3 class="fact-card__label">Aim</h3>
+            <p class="fact-card__value">Immersive sound bath</p>
+            <p class="fact-card__hover">Slow arcs of tone — closer to a meditative field than a song with verses and choruses.</p>
+          </article>
+          <article class="fact-card reveal">
+            <h3 class="fact-card__label">Status</h3>
+            <p class="fact-card__value">Active prototype</p>
+            <p class="fact-card__hover">We iterate in the open: document listens, revise wiring, and chase gestures that feel kind in the room.</p>
+          </article>
+        </div>
+
         <div class="overview__grid">
           <div class="overview__text reveal">
             <p>
               <strong>Sonic Plunge</strong> is our working title for a sound-bath-inspired installation centered on
-              quartz singing bowls. The aim is to choreograph tone and texture over time — less like a performance with
-              a fixed score, and more like a slowly shifting acoustic field you can step into.
+              <span
+                class="hint"
+                tabindex="0"
+                data-hint="Frosted quartz bowls sustain rich partials — each one has its own pitch bloom and attack character."
+                >quartz singing bowls</span
+              >. The aim is to choreograph tone and texture over time — less like a performance with a fixed score, and
+              more like a slowly shifting acoustic field you can step into.
             </p>
             <p>
-              “Automated” here means we are experimenting with ways to strike or excite the bowls and support them with
-              electronics, so the listening experience can unfold on its own while staying musically sensitive. We are
-              still prototyping: listening, adjusting, and learning what the bowls want to do in the room.
+              <span
+                class="hint"
+                tabindex="0"
+                data-hint="We prototype timing and motion so the system can run phrases without constant manual playing — still guided by musical taste."
+                >“Automated”</span
+              >
+              here means we are experimenting with ways to strike or excite the bowls and support them with electronics,
+              so the listening experience can unfold on its own while staying musically sensitive. We are still
+              prototyping: listening, adjusting, and learning what the bowls want to do in the room.
+            </p>
+            <p>
+              Practically, that has meant breadboards beside bowls, laptops open to sketches and tests, and lots of
+              floor time deciding what counts as “musical” when a motor taps metal. We keep notes on signal paths,
+              strike heights, and room placement so each revision is easier to compare by ear.
             </p>
             <p>
               The project sits at the overlap of <em>artistic intention</em>, <em>musical listening</em>, and
@@ -102,8 +151,35 @@
               height="1200"
               loading="lazy"
             />
-            <figcaption class="overview__caption">Early studio sessions: bowls, mallets, and gear in the same frame.</figcaption>
+            <figcaption class="overview__caption">
+              Early studio sessions: bowls, mallets, and gear in the same frame.
+              <span class="overview__caption-more">Hover the image for a closer look at how we staged the workspace.</span>
+            </figcaption>
           </figure>
+        </div>
+
+        <div class="materials glass reveal">
+          <h3 class="materials__title">Materials &amp; ingredients</h3>
+          <ul class="materials__list">
+            <li>
+              <span class="materials__tag">Acoustic</span>
+              Multiple frosted singing bowls, soft mallets, occasional gong / room mics for reference recordings.
+            </li>
+            <li>
+              <span class="materials__tag">Electronics</span>
+              Microcontroller-based control, breadboard circuits, servos or small motors for strike experiments,
+              batteries and regulated power where needed.
+            </li>
+            <li>
+              <span class="materials__tag">Light</span>
+              LED accents inside or under bowls to reinforce slow visual rhythm alongside sound.
+            </li>
+            <li>
+              <span class="materials__tag">Software</span>
+              Laptop tools for timing tests, audio capture, and iteration notes — whatever helps us repeat a listen
+              honestly.
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -124,6 +200,10 @@
               I tend to carry the thread between the breadboard and the bowls — sketching signal paths, trying ideas on
               the floor, and keeping notes when something finally sings the way we hoped.
             </p>
+            <p class="team-card__peek">
+              Focus lately: clean power paths, grounding quirks, and making the strike repeatable enough to compare
+              takes without guessing what changed.
+            </p>
           </article>
           <article class="team-card reveal">
             <div class="team-card__accent" aria-hidden="true"></div>
@@ -132,6 +212,10 @@
             <p class="team-card__bio">
               Vivaan is almost always next to the laptop or the hardware — testing strikes, comparing takes, and pushing
               the setup when we need one more honest round of “does this actually work?”
+            </p>
+            <p class="team-card__peek">
+              Focus lately: recording short A/B listens, stress-testing mounts and arms, and keeping the team honest when
+              something sounds clever but thin.
             </p>
           </article>
         </div>
@@ -154,6 +238,11 @@
                 We aligned on a sound-bath frame: slow time, long tones, and a room that feels held rather than rushed.
                 Sketches and conversations before anything was plugged in.
               </p>
+              <p class="timeline__detail">
+                We listed adjectives we wanted listeners to use afterward — “spacious,” “warm,” “unhurried” — and
+                rejected ideas that would turn the bowls into a novelty demo. The goal was an environment, not a gadget
+                showcase.
+              </p>
             </div>
           </li>
           <li class="timeline__item reveal">
@@ -163,6 +252,10 @@
               <p class="timeline__text">
                 Hours on the floor with mallets and bowls — learning how each bowl speaks, how it blooms, and what kinds
                 of gestures feel musical instead of mechanical.
+              </p>
+              <p class="timeline__detail">
+                We compared rim tones vs. side strikes, how close mallets could get before the sound turned brittle, and
+                how long to let a note decay before the next gesture — all before automation entered the picture.
               </p>
               <img
                 class="timeline__img js-encoded-src"
@@ -182,6 +275,10 @@
                 Microcontrollers, breadboards, and laptop screens joined the bowls. The goal was a modest, reliable loop:
                 try a circuit, listen, break it gently, try again.
               </p>
+              <p class="timeline__detail">
+                Early wins were boring in a good way: LEDs behaving, servos moving predictably, and a shared language
+                for “PWM,” “ground,” and “that click is the connector, not the bowl.”
+              </p>
               <img
                 class="timeline__img js-encoded-src"
                 data-filename="42280396-BB43-4D85-B807-4296FBFA5E47_1_105_c.jpeg"
@@ -199,6 +296,11 @@
               <p class="timeline__text">
                 Small motors, improvised arms, tape, and patience — chasing a strike that feels intentional rather than
                 abrupt. Lots of failure, a little comedy, and occasional breakthroughs.
+              </p>
+              <p class="timeline__detail">
+                We chased a strike that reads as a touch, not a knock: adjusting arm length, padding, angle, and delay
+                so the bowl sings instead of complaining. Every ugly attempt still taught us something about weight and
+                timing.
               </p>
               <img
                 class="timeline__img js-encoded-src"
@@ -218,6 +320,10 @@
                 We record listens, compare takes, and capture photos so future-us remembers what changed between
                 versions — including the messy middle.
               </p>
+              <p class="timeline__detail">
+                Documentation is part of the instrument: naming files by date, keeping photos of cable runs, and writing
+                down settings so we can return to a good take without relying on memory alone.
+              </p>
               <img
                 class="timeline__img js-encoded-src"
                 data-filename="E644A49B-2FE8-43AB-9972-EC4FE242BB3B_1_105_c.jpeg"
@@ -236,6 +342,10 @@
                 The project is still in motion — tightening details, reconsidering gestures, and asking what “automated”
                 should feel like when the room is quiet.
               </p>
+              <p class="timeline__detail">
+                Open questions: how much variation belongs in a “phrase,” how lighting tracks sound without stealing
+                attention, and what minimum viable reliability looks like before we call it shareable with a class.
+              </p>
               <img
                 class="timeline__img js-encoded-src"
                 data-filename="01B2508E-369B-4F37-A7E3-F2B2082F247F_1_105_c.jpeg"
@@ -250,17 +360,84 @@
       </div>
     </section>
 
+    <section id="motion" class="section section--motion" aria-labelledby="motion-title">
+      <div class="section__inner">
+        <h2 id="motion-title" class="section__title reveal">Prototype in motion</h2>
+        <p class="section__lead reveal">
+          Scroll through this column while the demo stays pinned — an early clip from the first time the rig moved, plus
+          the motor mount we iterated toward for cleaner strikes.
+        </p>
+
+        <div class="motion-layout">
+          <div class="motion-layout__pin">
+            <div class="motion-layout__sticky">
+              <div class="motion-video-shell glass">
+                <video class="motion-video" controls playsinline preload="metadata">
+                  <source src="SonicPlungeImages/earlydemo.mp4" type="video/mp4" />
+                  Your browser does not support embedded video.
+                </video>
+                <p class="motion-video__label">
+                  <span class="motion-video__tag">Early demo</span>
+                  First passes at timing and motion — unpolished on purpose.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="motion-layout__rail" aria-hidden="true">
+            <span class="motion-layout__rail-fill"></span>
+          </div>
+
+          <div class="motion-layout__stream">
+            <article class="motion-panel glass reveal">
+              <h3 class="motion-panel__title">Why a pinned demo</h3>
+              <p>
+                Sound-bath pacing is slow; a short clip still helps viewers hear how the strike lands before we talk
+                about code. Keep scrolling — the hardware photo below tracks the same storyline.
+              </p>
+            </article>
+
+            <figure class="motion-figure reveal">
+              <div class="motion-figure__frame">
+                <img
+                  class="motion-figure__img js-encoded-src"
+                  data-filename="motormount.jpeg"
+                  alt="Motor and mounting hardware positioned for striking a singing bowl — brackets, tape, and alignment in progress."
+                  width="900"
+                  height="700"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption class="motion-figure__cap">
+                Motor mount snapshot — rigging where small angles matter as much as voltage.
+              </figcaption>
+            </figure>
+
+            <article class="motion-panel glass reveal">
+              <h3 class="motion-panel__title">What we were solving</h3>
+              <p>
+                A mount has to be stiff enough to repeat, forgiving enough to adjust, and honest when it buzzes. This
+                photo is one stop in a longer chain of tape, brackets, and “try it again” afternoons.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="gallery" class="section section--gallery">
       <div class="section__inner">
         <h2 class="section__title reveal">Gallery</h2>
         <p class="section__lead reveal">
-          Moments from the build — bowls, light, cables, and the people behind them. Click an image to enlarge.
+          Moments from the build — bowls, light, cables, and the people behind them. Hover a thumbnail for a short line;
+          click anywhere on it for a larger view with the full caption.
         </p>
         <div id="gallery-main" class="gallery gallery--main" aria-label="Project photo gallery"></div>
 
         <h3 class="gallery__subheading reveal">Documentation snapshots</h3>
         <p class="gallery__subtext reveal">
           Class sessions, diagrams, and course materials — helpful context, separate from the studio-floor gallery above.
+          Same hover-and-click behavior as the main grid.
         </p>
         <div id="gallery-docs" class="gallery gallery--docs" aria-label="Documentation snapshots"></div>
       </div>
@@ -285,6 +462,11 @@
             feels clever but not kind. We are still learning how to carry an immersive sound experience out of
             imagination and into a real space — one version at a time.
           </p>
+          <p>
+            If there is a single takeaway for the course portfolio, it might be this: the “installation” is not only the
+            objects on the floor — it is also the process of listening together, failing in public, and revising until the
+            room feels a little more generous than when we started.
+          </p>
         </div>
       </div>
     </section>
@@ -293,9 +475,15 @@
   <footer class="site-footer" role="contentinfo">
     <div class="site-footer__inner">
       <p class="site-footer__title">Sonic Plunge</p>
-      <p class="site-footer__meta">University music gen ed project · sound installation / automated singing bowl study</p>
+      <p class="site-footer__meta">
+        Carnegie Mellon · music general education · sound installation / automated singing bowl study · spring prototype
+      </p>
       <p class="site-footer__team">Vardaan &amp; Vivaan</p>
-      <p class="site-footer__note">Built as static HTML — open <code>index.html</code> locally or use Live Server.</p>
+      <p class="site-footer__note">
+        Static site: <code>index.html</code>, <code>styles.css</code>, <code>script.js</code>, and images in
+        <code>SonicPlungeImages/</code> — open locally or with Live Server. Reduced-motion preferences are respected for
+        animations.
+      </p>
     </div>
   </footer>
 
