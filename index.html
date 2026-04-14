@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Sonic Plunge — an automated quartz singing bowl sound-bath installation built for a Carnegie Mellon music general education course. Resonance, light, electronics, and slow time." />
+  <meta name="description" content="Sonic Plunge — a CMU student-built automated singing bowl installation: acoustic bowls, spatial audio, light, tactile and sensory layers, and hardware prototypes." />
   <title>Sonic Plunge — Automated Singing Bowl Sound Bath</title>
   <!--
     EDITABLE CONTENT (quick reference)
     ─────────────────────────────────
     • <title> and meta description — browser tab & SEO blurb
     • Hero: .hero__title, .hero__subtitle, .hero__lede, button labels
-    • Overview: #overview section paragraphs
+    • Concept / Problem / Approach / Overview: section copy
     • Team: .team-card names, roles, bios (.team-card__bio)
-    • Journey: .timeline__label and .timeline__text per step
+    • Timeline: .timeline__label and .timeline__text per step
     • Reflection: #reflection section paragraphs
     • Footer: .site-footer lines
     • Image captions: GALLERY_MAIN and GALLERY_DOCS arrays in script.js
@@ -49,9 +49,12 @@
       <a class="logo" href="#">Sonic Plunge</a>
       <nav class="nav" aria-label="Primary">
         <ul class="nav__list">
-          <li><a href="#overview" title="Goals, snapshot cards, materials">Overview</a></li>
+          <li><a href="#concept" title="What Sonic Plunge is">Concept</a></li>
+          <li><a href="#problem" title="Why we are building it">Problem</a></li>
+          <li><a href="#approach" title="How we are tackling it">Approach</a></li>
+          <li><a href="#overview" title="Snapshot and materials">Overview</a></li>
           <li><a href="#team" title="Who is building Sonic Plunge">Team</a></li>
-          <li><a href="#journey" title="Timeline of the build">Journey</a></li>
+          <li><a href="#timeline" title="How the project unfolded">Timeline</a></li>
           <li><a href="#motion" title="Early demo video and motor mount">Demo</a></li>
           <li><a href="#gallery" title="Photos and documentation">Gallery</a></li>
           <li><a href="#reflection" title="What we are learning">Reflection</a></li>
@@ -64,9 +67,12 @@
     </div>
     <div id="mobile-nav" class="mobile-nav" hidden>
       <ul class="mobile-nav__list">
-        <li><a href="#overview" title="Goals, snapshot cards, materials">Overview</a></li>
+        <li><a href="#concept" title="What Sonic Plunge is">Concept</a></li>
+        <li><a href="#problem" title="Why we are building it">Problem</a></li>
+        <li><a href="#approach" title="How we are tackling it">Approach</a></li>
+        <li><a href="#overview" title="Snapshot and materials">Overview</a></li>
         <li><a href="#team" title="Who is building Sonic Plunge">Team</a></li>
-        <li><a href="#journey" title="Timeline of the build">Journey</a></li>
+        <li><a href="#timeline" title="How the project unfolded">Timeline</a></li>
         <li><a href="#motion" title="Early demo video and motor mount">Demo</a></li>
         <li><a href="#gallery" title="Photos and documentation">Gallery</a></li>
         <li><a href="#reflection" title="What we are learning">Reflection</a></li>
@@ -111,13 +117,16 @@
         </div>
         <p class="hero__eyebrow reveal">Score · Resonance · Room tone</p>
         <h1 id="hero-title" class="hero__title reveal">Sonic Plunge</h1>
-        <p class="hero__subtitle reveal">An automated singing bowl sound bath — built for our university music gen ed course.</p>
+        <p class="hero__subtitle reveal">
+          An automated singing bowl sound bath we are building at CMU — sound, light, and other sensory pieces in the same
+          system.
+        </p>
         <p class="hero__lede reveal">
-          We are exploring how resonance, light, and electronics can meet in one slow, immersive listening experience:
-          part sonic art, part hands-on engineering, part shared experiment.
+          We are wiring up bowls, lights, speakers, and tactile or haptic layers where we can route them, so the room
+          reads as a full-body experience — not only what you hear. 
         </p>
         <div class="hero__actions reveal">
-          <a class="btn btn--primary" href="#journey" title="Scroll to the build timeline">Our Journey</a>
+          <a class="btn btn--primary" href="#timeline" title="Scroll to the project timeline">Our timeline</a>
           <a class="btn btn--ghost" href="#gallery" title="Open the photo grid — click any image to enlarge">View Gallery</a>
         </div>
       </div>
@@ -129,20 +138,105 @@
       <span class="staff-rule__gutter staff-rule__gutter--end">𝄂</span>
     </div>
 
+    <section id="concept" class="section section--overview">
+      <div class="section__inner">
+        <h2 class="section__title section__title--music reveal"><span class="section__title-icon" aria-hidden="true">𝄞</span> Concept</h2>
+        <p class="section__lead reveal">
+          Sonic Plunge is our attempt to recreate the feeling of a sound bath using technology.
+        </p>
+        <div class="reflection__body reveal">
+          <p>
+            A traditional sound bath is not just about hearing sound — it is about how it feels in your body. There is a
+            physical quality to it: the vibrations, the space, the way sound moves around you. We wanted to build
+            something that captures that full experience, not just the audio.
+          </p>
+          <p>
+            To do that, we are combining robotics, sound design, and a deliberate sensory layer — light, vibration, and
+            spatial audio working together so your body has more than one thing to hold onto. The goal is still
+            immersive and calming, even though it is automated.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="staff-rule staff-rule--narrow" aria-hidden="true">
+      <span class="staff-rule__gutter">𝄀</span>
+      <span class="staff-rule__lines"></span>
+      <span class="staff-rule__gutter staff-rule__gutter--end">𝄂</span>
+    </div>
+
+    <section id="problem" class="section section--team">
+      <div class="section__inner">
+        <h2 class="section__title section__title--music reveal"><span class="section__title-icon" aria-hidden="true">♭</span> Problem</h2>
+        <p class="section__lead reveal">
+          Sound baths are powerful, but they are not always easy to access. They usually require a specific place, time,
+          and instructor.
+        </p>
+        <div class="reflection__body reveal">
+          <p>
+            We wanted to explore what happens if that experience could be available on demand.
+          </p>
+          <p>
+            The challenge is that once you automate something like this, it can easily lose what makes it special. So the
+            real problem we are trying to solve is not just accessibility, but how to keep the experience meaningful and
+            immersive even when it is driven by technology.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="staff-rule" aria-hidden="true">
+      <span class="staff-rule__gutter">𝄀</span>
+      <span class="staff-rule__lines"></span>
+      <span class="staff-rule__gutter staff-rule__gutter--end">𝄂</span>
+    </div>
+
+    <section id="approach" class="section section--overview">
+      <div class="section__inner">
+        <h2 class="section__title section__title--music reveal"><span class="section__title-icon" aria-hidden="true">♯</span> Approach</h2>
+        <p class="section__lead reveal">
+          Our approach is to break the experience into its core parts and rebuild it.
+        </p>
+        <div class="reflection__body reveal">
+          <p>
+            On the hardware side, we are using a robotic system to physically strike the singing bowls, so the sound is
+            still being produced in a real, tactile way.
+          </p>
+          <p>
+            At the same time, we are designing the audio using a multi-speaker setup to control how sound moves through
+            the space. This lets us shape the experience more intentionally.
+          </p>
+          <p>
+            We are also designing visuals and other sensory elements on purpose — color drift, brightness, touch or
+            vibration where it fits — so the installation is not only “correct” but felt in more than one sense at once.
+          </p>
+          <p>
+            The project sits somewhere between engineering and art. It is not just about making it work — it is about
+            making it feel right.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="staff-rule staff-rule--narrow" aria-hidden="true">
+      <span class="staff-rule__gutter">𝄀</span>
+      <span class="staff-rule__lines"></span>
+      <span class="staff-rule__gutter staff-rule__gutter--end">𝄂</span>
+    </div>
+
     <section id="overview" class="section section--overview">
       <div class="section__inner">
-        <h2 class="section__title section__title--music reveal"><span class="section__title-icon" aria-hidden="true">𝄞</span> Project overview</h2>
+        <h2 class="section__title section__title--music reveal"><span class="section__title-icon" aria-hidden="true">♪</span> At a glance</h2>
         <p class="section__lead reveal">
-          Sonic Plunge is a semester-long exploration: how to invite people into a calm, sustained listening experience
-          using acoustic objects, light, and carefully timed electronics — without losing the bowls’ natural voice.
-          Think of it as a slow movement: long phrases, soft dynamics, plenty of room between attacks.
+          The short version: quartz bowls, borrowed studio time, and a pile of boards and motors we keep apologizing to
+          when something buzzes wrong.
         </p>
 
         <div class="facts" aria-label="Project snapshot">
           <article class="fact-card reveal">
             <h3 class="fact-card__label">Setting</h3>
-            <p class="fact-card__value">Music gen ed · CMU studio</p>
-            <p class="fact-card__hover">Built in shared music-technology studio time with access to floorspace, carts, and room to make noise responsibly.</p>
+            <p class="fact-card__value">CMU music technology studio</p>
+            <p class="fact-card__hover">Shared studio space at CMU — floorspace, carts, and room to test sound, light, and sensory rigs without pretending it is quiet.</p>
           </article>
           <article class="fact-card reveal">
             <h3 class="fact-card__label">Medium</h3>
@@ -151,8 +245,8 @@
           </article>
           <article class="fact-card reveal">
             <h3 class="fact-card__label">Aim</h3>
-            <p class="fact-card__value">Immersive sound bath</p>
-            <p class="fact-card__hover">Slow arcs of tone — closer to a meditative field than a song with verses and choruses.</p>
+            <p class="fact-card__value">Full sensory bath</p>
+            <p class="fact-card__hover">Slow arcs of tone, light, and vibration — closer to lying on the floor in a studio than chasing a radio single.</p>
           </article>
           <article class="fact-card reveal">
             <h3 class="fact-card__label">Status</h3>
@@ -164,14 +258,15 @@
         <div class="overview__grid">
           <div class="overview__text reveal">
             <p>
-              <strong>Sonic Plunge</strong> is our working title for a sound-bath-inspired installation centered on
+              <strong>Sonic Plunge</strong> is our working title for this build — centered on
               <span
                 class="hint"
                 tabindex="0"
                 data-hint="Frosted quartz bowls sustain rich partials — each one has its own pitch bloom and attack character."
                 >quartz singing bowls</span
-              >. The aim is to choreograph tone and texture over time — less like a performance with a fixed score, and
-              more like a slowly shifting acoustic field you can step into.
+              >
+              and whatever we wrap around them — speakers, lights, motors, and other sensory paths. The longer story
+              lives up in Concept, Problem, and Approach; down here is the messy bench-level detail.
             </p>
             <p>
               <span
@@ -180,18 +275,8 @@
                 data-hint="We prototype timing and motion so the system can run phrases without constant manual playing — still guided by musical taste."
                 >“Automated”</span
               >
-              here means we are experimenting with ways to strike or excite the bowls and support them with electronics,
-              so the listening experience can unfold on its own while staying musically sensitive. We are still
-              prototyping: listening, adjusting, and learning what the bowls want to do in the room.
-            </p>
-            <p>
-              Practically, that has meant breadboards beside bowls, laptops open to sketches and tests, and lots of
-              floor time deciding what counts as “musical” when a motor taps metal. We keep notes on signal paths,
-              strike heights, and room placement so each revision is easier to compare by ear.
-            </p>
-            <p>
-              The project sits at the overlap of <em>artistic intention</em>, <em>musical listening</em>, and
-              <em>electrical tinkering</em> — building something fragile and beautiful from wires, code, and patience.
+              for us still means lots of hand-tuning — it is just that the hand is not always on the mallet. We log
+              strikes, sketch signal paths, and argue about whether a take felt kind before we move on.
             </p>
           </div>
           <figure class="overview__figure reveal">
@@ -228,6 +313,11 @@
               LED accents inside or under bowls to reinforce slow visual rhythm alongside sound.
             </li>
             <li>
+              <span class="materials__tag">Sensory</span>
+              Tactile transducers, seating vibration, or other physical channels so the low end is not only in your ears
+              — tuned so it supports the bath rather than rattling the room.
+            </li>
+            <li>
               <span class="materials__tag">Software</span>
               Laptop tools for timing tests, audio capture, and iteration notes — whatever helps us repeat a listen
               honestly.
@@ -245,37 +335,63 @@
 
     <section id="team" class="section section--team">
       <div class="section__inner">
-        <h2 class="section__title section__title--music reveal"><span class="section__title-icon" aria-hidden="true">♫</span> Ensemble</h2>
+        <h2 class="section__title section__title--music reveal"><span class="section__title-icon" aria-hidden="true">♫</span> Team</h2>
         <p class="section__lead reveal">
-          The electrical side of Sonic Plunge — sensors, actuation, wiring, and iteration — is being developed by
-          <strong>us two</strong> alongside our coursework and studio time. Two players, one arrangement, lots of
-          rehearsal-room honesty.
+          This project is a mix of different strengths coming together.
         </p>
         <div class="team__grid">
           <article class="team-card reveal">
             <div class="team-card__accent" aria-hidden="true"></div>
-            <h3 class="team-card__name">Vardaan</h3>
-            <p class="team-card__role">Co-builder · electronics &amp; integration</p>
+            <h3 class="team-card__name">Felix Li</h3>
+            <p class="team-card__role">Team lead · M.S. student, Music Technology (CMU)</p>
             <p class="team-card__bio">
-              I tend to carry the thread between the breadboard and the bowls — sketching signal paths, trying ideas on
-              the floor, and keeping notes when something finally sings the way we hoped.
-            </p>
-            <p class="team-card__peek">
-              Focus lately: clean power paths, grounding quirks, and making the strike repeatable enough to compare
-              takes without guessing what changed.
+              Felix is leading the team and helping keep everything aligned across the different parts of the project —
+              music, hardware, and how it all fits together in the room.
             </p>
           </article>
           <article class="team-card reveal">
             <div class="team-card__accent" aria-hidden="true"></div>
-            <h3 class="team-card__name">Vivaan</h3>
-            <p class="team-card__role">Co-builder · prototyping &amp; testing</p>
+            <h3 class="team-card__name">Monique Mead</h3>
+            <p class="team-card__role">Faculty mentor</p>
             <p class="team-card__bio">
-              Vivaan is almost always next to the laptop or the hardware — testing strikes, comparing takes, and pushing
-              the setup when we need one more honest round of “does this actually work?”
+              Monique has been guiding the direction of the sound and sensory design, making sure the experience stays
+              grounded in what makes a sound bath effective — not just what looks cool on a schematic.
             </p>
-            <p class="team-card__peek">
-              Focus lately: recording short A/B listens, stress-testing mounts and arms, and keeping the team honest when
-              something sounds clever but thin.
+          </article>
+          <article class="team-card reveal">
+            <div class="team-card__accent" aria-hidden="true"></div>
+            <h3 class="team-card__name">Liam Chiu</h3>
+            <p class="team-card__role">Freshman · BCSA · CS + Music Technology · UnSound / music lead</p>
+            <p class="team-card__bio">
+              Along with Felix and Monique, Liam is part of the group thinking about the music and the overall sensory
+              experience — how everything reads when you are actually sitting in it.
+            </p>
+          </article>
+          <article class="team-card reveal">
+            <div class="team-card__accent" aria-hidden="true"></div>
+            <h3 class="team-card__name">Lilith Ren</h3>
+            <p class="team-card__role">Visuals</p>
+            <p class="team-card__bio">
+              Lilith is leading the visual side, shaping how the experience looks and feels — light, color, and what your
+              eyes do while your ears are doing most of the work.
+            </p>
+          </article>
+          <article class="team-card reveal">
+            <div class="team-card__accent" aria-hidden="true"></div>
+            <h3 class="team-card__name">Vardaan Gupta</h3>
+            <p class="team-card__role">Sophomore · ECE + AI · robotics / hardware</p>
+            <p class="team-card__bio">
+              Vardaan is working on the robotics side — building the mechanism that actually reaches the bowls and
+              behaves well enough to repeat night after night.
+            </p>
+          </article>
+          <article class="team-card reveal">
+            <div class="team-card__accent" aria-hidden="true"></div>
+            <h3 class="team-card__name">Vivaan Sawanth</h3>
+            <p class="team-card__role">Sophomore · ECE + Robotics · robotics / hardware</p>
+            <p class="team-card__bio">
+              Vivaan is on the same robotics track — hardware, mounts, and testing — so the system that touches the bowls
+              stays reliable when we are not in the room to babysit it.
             </p>
           </article>
         </div>
@@ -288,41 +404,34 @@
       <span class="staff-rule__gutter staff-rule__gutter--end">𝄂</span>
     </div>
 
-    <section id="journey" class="section section--journey">
+    <section id="timeline" class="section section--journey">
       <div class="section__inner">
-        <h2 class="section__title section__title--music reveal"><span class="section__title-icon" aria-hidden="true">𝄐</span> Build journey</h2>
+        <h2 class="section__title section__title--music reveal"><span class="section__title-icon" aria-hidden="true">𝄐</span> Timeline</h2>
         <p class="section__lead reveal">
-          A loose timeline of where we have been — not a spec sheet, just the shape of the work so far. Each beat is a
-          rehearsal: listen, mark the score, revise.
+          How we got from a real studio session to a system we are still wiring up — bowls on one track, sound and music
+          on another, then both meeting in the middle.
         </p>
 
         <ol class="timeline">
           <li class="timeline__item reveal">
             <div class="timeline__marker" aria-hidden="true"></div>
             <div class="timeline__content glass">
-              <h3 class="timeline__label">Concept + early planning</h3>
+              <h3 class="timeline__label">We started in a studio</h3>
               <p class="timeline__text">
-                We aligned on a sound-bath frame: slow time, long tones, and a room that feels held rather than rushed.
-                Sketches and conversations before anything was plugged in.
+                We started by experiencing a real sound bath in a studio. That gave us a baseline for what the
+                experience is actually like, beyond just the idea of it.
               </p>
               <p class="timeline__detail">
-                We listed adjectives we wanted listeners to use afterward — “spacious,” “warm,” “unhurried” — and
-                rejected ideas that would turn the bowls into a novelty demo. The goal was an environment, not a gadget
-                showcase.
+                <em>Photo placeholder — we will add a shot from that visit when we have one we like.</em>
               </p>
             </div>
           </li>
           <li class="timeline__item reveal">
             <div class="timeline__marker" aria-hidden="true"></div>
             <div class="timeline__content glass">
-              <h3 class="timeline__label">Testing singing bowls</h3>
+              <h3 class="timeline__label">Playing the bowls ourselves</h3>
               <p class="timeline__text">
-                Hours on the floor with mallets and bowls — learning how each bowl speaks, how it blooms, and what kinds
-                of gestures feel musical instead of mechanical.
-              </p>
-              <p class="timeline__detail">
-                We compared rim tones vs. side strikes, how close mallets could get before the sound turned brittle, and
-                how long to let a note decay before the next gesture — all before automation entered the picture.
+                After that, we tried playing the bowls ourselves to understand the technique and what affects the sound.
               </p>
               <img
                 class="timeline__img js-encoded-src"
@@ -337,14 +446,10 @@
           <li class="timeline__item reveal">
             <div class="timeline__marker" aria-hidden="true"></div>
             <div class="timeline__content glass">
-              <h3 class="timeline__label">Electrical setup</h3>
+              <h3 class="timeline__label">What to recreate, what to automate</h3>
               <p class="timeline__text">
-                Microcontrollers, breadboards, and laptop screens joined the bowls. The goal was a modest, reliable loop:
-                try a circuit, listen, break it gently, try again.
-              </p>
-              <p class="timeline__detail">
-                Early wins were boring in a good way: LEDs behaving, servos moving predictably, and a shared language
-                for “PWM,” “ground,” and “that click is the connector, not the bowl.”
+                Through that process, we began to figure out what parts of the experience we would need to recreate and
+                what could be automated.
               </p>
               <img
                 class="timeline__img js-encoded-src"
@@ -359,59 +464,44 @@
           <li class="timeline__item reveal">
             <div class="timeline__marker" aria-hidden="true"></div>
             <div class="timeline__content glass">
-              <h3 class="timeline__label">Wiring + actuation experiments</h3>
+              <h3 class="timeline__label">At the same time: sound design and music</h3>
               <p class="timeline__text">
-                Small motors, improvised arms, tape, and patience — chasing a strike that feels intentional rather than
-                abrupt. Lots of failure, a little comedy, and occasional breakthroughs.
+                At the same time, we were working on the sound design. We started building out a multi-speaker setup,
+                experimenting with how audio moves in space. Alongside that, we began writing and composing the music,
+                followed by recording and testing different versions.
               </p>
+              <div class="materials">
+                <ul class="materials__list">
+                  <li>
+                    <span class="materials__tag">Sound design</span>
+                    Multi-speaker layout and how sound travels — panning, distance, and whether the bowls still feel like
+                    the center of the room.
+                  </li>
+                  <li>
+                    <span class="materials__tag">Writing</span>
+                    Composing and revising material that fits the slow arc we are aiming for.
+                  </li>
+                  <li>
+                    <span class="materials__tag">Recording</span>
+                    Capturing takes and testing versions so we are not guessing what changed between listens.
+                  </li>
+                </ul>
+              </div>
               <p class="timeline__detail">
-                We chased a strike that reads as a touch, not a knock: adjusting arm length, padding, angle, and delay
-                so the bowl sings instead of complaining. Every ugly attempt still taught us something about weight and
-                timing.
+                <em>Photo placeholder — e.g. speakers, DAW, or a session in progress.</em>
               </p>
-              <img
-                class="timeline__img js-encoded-src"
-                data-filename="DE7A8712-F5CC-4226-87BB-374C4D9D1360_1_105_c.jpeg"
-                alt="Team members work on the floor with laptops, singing bowls, and small electronic parts."
-                width="800"
-                height="600"
-                loading="lazy"
-              />
             </div>
           </li>
           <li class="timeline__item reveal">
             <div class="timeline__marker" aria-hidden="true"></div>
             <div class="timeline__content glass">
-              <h3 class="timeline__label">Sound testing + documentation</h3>
+              <h3 class="timeline__label">Coming together</h3>
               <p class="timeline__text">
-                We record listens, compare takes, and capture photos so future-us remembers what changed between
-                versions — including the messy middle.
+                Over time, both sides started to come together into a single system.
               </p>
               <p class="timeline__detail">
-                Documentation is part of the instrument: naming files by date, keeping photos of cable runs, and writing
-                down settings so we can return to a good take without relying on memory alone.
-              </p>
-              <img
-                class="timeline__img js-encoded-src"
-                data-filename="E644A49B-2FE8-43AB-9972-EC4FE242BB3B_1_105_c.jpeg"
-                alt="Laptops with audio software and a singing bowl with wires on a studio floor."
-                width="800"
-                height="600"
-                loading="lazy"
-              />
-            </div>
-          </li>
-          <li class="timeline__item reveal">
-            <div class="timeline__marker" aria-hidden="true"></div>
-            <div class="timeline__content glass">
-              <h3 class="timeline__label">Iteration and refinement</h3>
-              <p class="timeline__text">
-                The project is still in motion — tightening details, reconsidering gestures, and asking what “automated”
-                should feel like when the room is quiet.
-              </p>
-              <p class="timeline__detail">
-                Open questions: how much variation belongs in a “phrase,” how lighting tracks sound without stealing
-                attention, and what minimum viable reliability looks like before we call it shareable with a class.
+                We are still tightening hardware, mixes, and lighting — but the story is the same: studio reference, hands
+                on bowls, parallel audio work, then one installation that has to carry all of it.
               </p>
               <img
                 class="timeline__img js-encoded-src"
@@ -500,7 +590,7 @@
 
     <section id="gallery" class="section section--gallery">
       <div class="section__inner">
-        <h2 class="section__title section__title--music reveal"><span class="section__title-icon" aria-hidden="true">♯</span> Gallery</h2>
+        <h2 class="section__title section__title--music reveal"><span class="section__title-icon" aria-hidden="true">♬</span> Gallery</h2>
         <p class="section__lead reveal">
           Stills from the score — bowls, light, cables, and the people behind them. Hover a thumbnail for a cue; click for
           the full caption, like opening a measure for a closer read.
@@ -509,8 +599,8 @@
 
         <h3 class="gallery__subheading reveal"><span class="gallery__subheading-mark" aria-hidden="true">♪</span> Documentation &amp; sketches</h3>
         <p class="gallery__subtext reveal">
-          Class sessions, diagrams, and course materials — rehearsal notes from the semester, separate from the
-          studio-floor gallery above. Same hover-and-click behavior as the main grid.
+          Meetings, diagrams, and planning snapshots — separate from the studio-floor gallery above. Same hover-and-click
+          behavior as the main grid.
         </p>
         <div id="gallery-docs" class="gallery gallery--docs" aria-label="Documentation snapshots"></div>
       </div>
@@ -532,13 +622,13 @@
           </p>
           <p>
             Testing has been a kind of listening: repeating setups until we trust them, and staying honest when something
-            feels clever but not kind. We are still learning how to carry an immersive sound experience out of
-            imagination and into a real space — one version at a time.
+            feels clever but not kind. We are still learning how to carry a full-room listening idea out of imagination
+            and into a real space — one version at a time.
           </p>
           <p>
-            If there is a single takeaway for the course portfolio, it might be this: the “installation” is not only the
-            objects on the floor — it is also the process of listening together, failing in public, and revising until the
-            room feels a little more generous than when we started.
+            If there is one thing we want this project page to say, it is this: the installation is not only the objects
+            on the floor — it is also sound, light, touch, and the process of listening together until the room feels a
+            little more generous than when we started.
           </p>
         </div>
       </div>
@@ -550,10 +640,12 @@
     <div class="site-footer__inner">
       <p class="site-footer__title">Sonic Plunge <span class="site-footer__fermata" aria-hidden="true">𝄐</span></p>
       <p class="site-footer__meta">
-        Carnegie Mellon · music general education · sound installation / automated singing bowl study · spring prototype
+        Carnegie Mellon · multi-sensory sound installation · automated singing bowls · spring prototype
       </p>
       <p class="site-footer__dynamics" aria-hidden="true"><span>p</span> <span>mp</span> <span>mf</span> <span>f</span></p>
-      <p class="site-footer__team">Vardaan &amp; Vivaan</p>
+      <p class="site-footer__team">
+        Felix Li · Liam Chiu · Lilith Ren · Monique Mead · Vardaan Gupta · Vivaan Sawanth
+      </p>
       <p class="site-footer__fine">Fine — project continues in the studio.</p>
       <p class="site-footer__note">
         Static site: <code>index.html</code>, <code>styles.css</code>, <code>script.js</code>, and images in

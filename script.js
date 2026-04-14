@@ -63,7 +63,7 @@
     {
       file: "1A3BF260-B750-4CB7-AA56-DCD96D57C457_1_105_c.jpeg",
       caption: "Build documentation — another angle on the workspace and setup.",
-      detail: "Alternate angle for the portfolio: proof we actually lived in this room for weeks."
+      detail: "Alternate angle for documentation: proof we actually lived in this room for weeks."
     },
     {
       file: "1E56BCF1-E285-48D9-8E44-590CF57A20FD_1_105_c.jpeg",
