@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Sonic Plunge — a CMU student-built automated singing bowl installation: acoustic bowls, spatial audio, light, tactile and sensory layers, and hardware prototypes." />
+  <meta name="description" content="Sonic Plunge — a CMU multi-sensory installation: wavefield synthesis spatial audio, automated singing bowls with physical excitation, real-time visuals, DMX lighting, tactile seating, and synchronized control." />
   <title>Sonic Plunge — Automated Singing Bowl Sound Bath</title>
   <!--
     EDITABLE CONTENT (quick reference)
@@ -117,14 +117,12 @@
         </div>
         <p class="hero__eyebrow reveal">Score · Resonance · Room tone</p>
         <h1 id="hero-title" class="hero__title reveal">Sonic Plunge</h1>
-        <p class="hero__subtitle reveal">
-          An automated singing bowl sound bath we are building at CMU — sound, light, and other sensory pieces in the same
-          system.
+        <p class="hero__subtitle reveal">An automated multi-sensory installation</p>
+        <p class="hero__dek reveal">
+          The Sonic Plunge experience blends trance-inducing sound, video, scent, and haptics into a fully automated
+          deep-dive meditation that feels part dreamscape, part sensory joyride.
         </p>
-        <p class="hero__lede reveal">
-          We are wiring up bowls, lights, speakers, and tactile or haptic layers where we can route them, so the room
-          reads as a full-body experience — not only what you hear. 
-        </p>
+        <p class="hero__lede reveal">A project of the Music Entrepreneurship division</p>
         <div class="hero__actions reveal">
           <a class="btn btn--primary" href="#timeline" title="Scroll to the project timeline">Our timeline</a>
           <a class="btn btn--ghost" href="#gallery" title="Open the photo grid — click any image to enlarge">View Gallery</a>
@@ -142,18 +140,21 @@
       <div class="section__inner">
         <h2 class="section__title section__title--music reveal"><span class="section__title-icon" aria-hidden="true">𝄞</span> Concept</h2>
         <p class="section__lead reveal">
-          Sonic Plunge is our attempt to recreate the feeling of a sound bath using technology.
+          Sonic Plunge is a multi-sensory installation — more than an automated playlist of bowl samples. It is a
+          time-based, sound-led experience where listening, light, vibration, and other cues stay in the same story.
         </p>
         <div class="reflection__body reveal">
           <p>
-            A traditional sound bath is not just about hearing sound — it is about how it feels in your body. There is a
-            physical quality to it: the vibrations, the space, the way sound moves around you. We wanted to build
-            something that captures that full experience, not just the audio.
+            A sound bath lands because your whole body notices it: pressure in the air, sound moving through space,
+            vibration in what you are sitting on, low light, and enough time for your attention to slow down. We are
+            building toward that same embodied feeling with spatial audio, physically excited singing bowls, coordinated
+            lighting and visuals, tactile paths through seating or transducers, and optional scent — each dialed so it
+            supports the listening instead of competing with it.
           </p>
           <p>
-            To do that, we are combining robotics, sound design, and a deliberate sensory layer — light, vibration, and
-            spatial audio working together so your body has more than one thing to hold onto. The goal is still
-            immersive and calming, even though it is automated.
+            The project stays rooted in sound-healing and soundscape ideas: sound carries the arc, and the other senses
+            reinforce it chapter by chapter. Nothing here is meant to read as a tech flex dressed up as meditation — we
+            want it calm, legible, and honest about what is still prototype work on the bench.
           </p>
         </div>
       </div>
@@ -169,17 +170,19 @@
       <div class="section__inner">
         <h2 class="section__title section__title--music reveal"><span class="section__title-icon" aria-hidden="true">♭</span> Problem</h2>
         <p class="section__lead reveal">
-          Sound baths are powerful, but they are not always easy to access. They usually require a specific place, time,
-          and instructor.
+          A strong live sound bath depends on the right room, schedule, and facilitator — not something most people can
+          walk into on a random evening.
         </p>
         <div class="reflection__body reveal">
           <p>
-            We wanted to explore what happens if that experience could be available on demand.
+            We wanted to ask whether that kind of slow, full-body listening could exist in a form we can rehearse,
+            revise, and eventually run on demand — still careful about levels and pacing, but not locked to a single
+            studio calendar.
           </p>
           <p>
-            The challenge is that once you automate something like this, it can easily lose what makes it special. So the
-            real problem we are trying to solve is not just accessibility, but how to keep the experience meaningful and
-            immersive even when it is driven by technology.
+            Automation makes reach easier; it also makes it easy to sound cheap. The harder problem is keeping timing,
+            tone, and sensory balance believable so the room still feels like a bath — not a screen saver with good
+            marketing — even when motors and projectors are doing part of the work.
           </p>
         </div>
       </div>
@@ -195,24 +198,34 @@
       <div class="section__inner">
         <h2 class="section__title section__title--music reveal"><span class="section__title-icon" aria-hidden="true">♯</span> Approach</h2>
         <p class="section__lead reveal">
-          Our approach is to break the experience into its core parts and rebuild it.
+          We are treating Sonic Plunge as one integrated installation: spatial sound and automated bowls on one control
+          path, visuals, lighting, scent, and tactile vibration on another, with tight synchronization so the room reads
+          as a single responsive environment.
         </p>
         <div class="reflection__body reveal">
           <p>
-            On the hardware side, we are using a robotic system to physically strike the singing bowls, so the sound is
-            still being produced in a real, tactile way.
+            <strong>Sound and bowls.</strong> Spatial audio is rendered through a wavefield synthesis (WFS) speaker
+            array so energy has a place in the room instead of collapsing to stereo “inside your head.” Alongside that,
+            we are driving quartz singing bowls with automated exciters (we prototype using what we call the “Musical
+            Mushroom” units) so the metal rings from real mechanical energy — not only a recording of a strike played
+            back on a cone.
           </p>
           <p>
-            At the same time, we are designing the audio using a multi-speaker setup to control how sound moves through
-            the space. This lets us shape the experience more intentionally.
+            <strong>Show and senses.</strong> Real-time or generative projections, DMX-controlled lighting, automated
+            scent release, and tactile transducers in seating give us separate handles on atmosphere. The aim is
+            audio-reactive visuals and lighting, with scent and low-frequency vibration underscoring what you hear, so
+            the story stays embodied instead of only visual.
           </p>
           <p>
-            We are also designing visuals and other sensory elements on purpose — color drift, brightness, touch or
-            vibration where it fits — so the installation is not only “correct” but felt in more than one sense at once.
+            <strong>How the pieces talk.</strong> In our design, audio control (WFS plus bowl exciters, largely in
+            Max/MSP) and show control (TouchDesigner for picture, lights, scent cues, and tactile feeds) stay linked over
+            the network — OSC messages and shared timing — so scenes can shift together. Reliability and flexibility both
+            matter: we need repeatability for rehearsal, headroom for live tweaks, and enough fault tolerance that one
+            subsystem glitch does not flatten the whole arc.
           </p>
           <p>
-            The project sits somewhere between engineering and art. It is not just about making it work — it is about
-            making it feel right.
+            Under all of that is still the same floor work: mounts, grounding, and long listening sessions. The signal
+            chain only earns its keep if the listening says so.
           </p>
         </div>
       </div>
@@ -228,30 +241,30 @@
       <div class="section__inner">
         <h2 class="section__title section__title--music reveal"><span class="section__title-icon" aria-hidden="true">♪</span> At a glance</h2>
         <p class="section__lead reveal">
-          The short version: quartz bowls, borrowed studio time, and a pile of boards and motors we keep apologizing to
-          when something buzzes wrong.
+          Short version: frosted quartz bowls, a WFS array and bowl exciters on one workbench, TouchDesigner and lighting
+          on another, and enough zip ties to remind us we are still students.
         </p>
 
         <div class="facts" aria-label="Project snapshot">
           <article class="fact-card reveal">
             <h3 class="fact-card__label">Setting</h3>
             <p class="fact-card__value">CMU music technology studio</p>
-            <p class="fact-card__hover">Shared studio space at CMU — floorspace, carts, and room to test sound, light, and sensory rigs without pretending it is quiet.</p>
+            <p class="fact-card__hover">Shared lab space — room to spread speakers, bowls, lights, and seating rigs while we chase hum, phase, and the occasional mystery buzz.</p>
           </article>
           <article class="fact-card reveal">
             <h3 class="fact-card__label">Medium</h3>
-            <p class="fact-card__value">Quartz bowls + circuits</p>
-            <p class="fact-card__hover">Frosted singing bowls for long decays; microcontrollers and actuators to explore repeatable, gentle strikes.</p>
+            <p class="fact-card__value">Bowls + spatial audio + control</p>
+            <p class="fact-card__hover">Frosted bowls for long decays; exciters and motors for repeatable strikes; WFS loudspeakers so sound has real placement in the room.</p>
           </article>
           <article class="fact-card reveal">
             <h3 class="fact-card__label">Aim</h3>
-            <p class="fact-card__value">Full sensory bath</p>
-            <p class="fact-card__hover">Slow arcs of tone, light, and vibration — closer to lying on the floor in a studio than chasing a radio single.</p>
+            <p class="fact-card__value">Multi-sensory arc</p>
+            <p class="fact-card__hover">Narrative soundscape storytelling: slow tone, coordinated light, vibration, and scent cues that track the same chapter-to-chapter arc.</p>
           </article>
           <article class="fact-card reveal">
             <h3 class="fact-card__label">Status</h3>
             <p class="fact-card__value">Active prototype</p>
-            <p class="fact-card__hover">We iterate in the open: document listens, revise wiring, and chase gestures that feel kind in the room.</p>
+            <p class="fact-card__hover">Integration is the job now — syncing audio, bowls, visuals, and tactile paths until the install behaves like one system.</p>
           </article>
         </div>
 
@@ -265,8 +278,9 @@
                 data-hint="Frosted quartz bowls sustain rich partials — each one has its own pitch bloom and attack character."
                 >quartz singing bowls</span
               >
-              and whatever we wrap around them — speakers, lights, motors, and other sensory paths. The longer story
-              lives up in Concept, Problem, and Approach; down here is the messy bench-level detail.
+              and the systems around them — WFS playback, bowl exciters, DMX and projectors, tactile feeds, scent
+              hardware when it is online. Concept and Approach spell out the architecture; this section is the
+              bench-level mess.
             </p>
             <p>
               <span
@@ -275,8 +289,8 @@
                 data-hint="We prototype timing and motion so the system can run phrases without constant manual playing — still guided by musical taste."
                 >“Automated”</span
               >
-              for us still means lots of hand-tuning — it is just that the hand is not always on the mallet. We log
-              strikes, sketch signal paths, and argue about whether a take felt kind before we move on.
+              still means hours of manual tuning — the difference is whether the hand is on a mallet or a fader. We log
+              strikes, capture OSC routes, and compare listens so we know what changed between takes.
             </p>
           </div>
           <figure class="overview__figure reveal">
@@ -319,8 +333,8 @@
             </li>
             <li>
               <span class="materials__tag">Software</span>
-              Laptop tools for timing tests, audio capture, and iteration notes — whatever helps us repeat a listen
-              honestly.
+              Max/MSP patches for spatial audio and bowl or exciter control; TouchDesigner for projections, DMX lighting,
+              scent cues, and tactile routing; OSC between subsystems so scenes stay locked in time.
             </li>
           </ul>
         </div>
@@ -345,8 +359,8 @@
             <h3 class="team-card__name">Felix Li</h3>
             <p class="team-card__role">Team lead · M.S. student, Music Technology (CMU)</p>
             <p class="team-card__bio">
-              Felix is leading the team and helping keep everything aligned across the different parts of the project —
-              music, hardware, and how it all fits together in the room.
+              Felix leads the install end to end — spatial audio, bowl automation, and show control — so the WFS array,
+              exciters, and TouchDesigner side of the rig stay pointed at the same listening goals.
             </p>
           </article>
           <article class="team-card reveal">
@@ -354,8 +368,8 @@
             <h3 class="team-card__name">Monique Mead</h3>
             <p class="team-card__role">Faculty mentor</p>
             <p class="team-card__bio">
-              Monique has been guiding the direction of the sound and sensory design, making sure the experience stays
-              grounded in what makes a sound bath effective — not just what looks cool on a schematic.
+              Monique anchors the sound-healing and sensory side — helping us judge pacing, tone, and when the technology
+              is serving the listening instead of showing off.
             </p>
           </article>
           <article class="team-card reveal">
@@ -363,8 +377,8 @@
             <h3 class="team-card__name">Liam Chiu</h3>
             <p class="team-card__role">Freshman · BCSA · CS + Music Technology · UnSound / music lead</p>
             <p class="team-card__bio">
-              Along with Felix and Monique, Liam is part of the group thinking about the music and the overall sensory
-              experience — how everything reads when you are actually sitting in it.
+              With Felix and Monique, Liam works the musical and sensory arc — composition choices, spatial mixes, and
+              how each chapter should feel when you are on the floor hearing it.
             </p>
           </article>
           <article class="team-card reveal">
@@ -372,8 +386,8 @@
             <h3 class="team-card__name">Lilith Ren</h3>
             <p class="team-card__role">Visuals</p>
             <p class="team-card__bio">
-              Lilith is leading the visual side, shaping how the experience looks and feels — light, color, and what your
-              eyes do while your ears are doing most of the work.
+              Lilith carries real-time and chapter-based visuals — projection, color, and motion — so the eye tracks what
+              the WFS mix and bowls are doing instead of fighting them.
             </p>
           </article>
           <article class="team-card reveal">
@@ -381,8 +395,8 @@
             <h3 class="team-card__name">Vardaan Gupta</h3>
             <p class="team-card__role">Sophomore · ECE + AI · robotics / hardware</p>
             <p class="team-card__bio">
-              Vardaan is working on the robotics side — building the mechanism that actually reaches the bowls and
-              behaves well enough to repeat night after night.
+              Vardaan builds the physical side of bowl automation — mounts, exciter alignment, power — so strikes stay
+              repeatable enough to match the spatial mix.
             </p>
           </article>
           <article class="team-card reveal">
@@ -390,8 +404,8 @@
             <h3 class="team-card__name">Vivaan Sawant</h3>
             <p class="team-card__role">Sophomore · ECE + Robotics · robotics / hardware</p>
             <p class="team-card__bio">
-              Vivaan is on the same robotics track — hardware, mounts, and testing — so the system that touches the bowls
-              stays reliable when we are not in the room to babysit it.
+              Vivaan stress-tests the same hardware path — recording A/B listens, chasing buzzes, and keeping the
+              mechanical chain honest next to what Max and TouchDesigner are asking for.
             </p>
           </article>
         </div>
@@ -408,8 +422,8 @@
       <div class="section__inner">
         <h2 class="section__title section__title--music reveal"><span class="section__title-icon" aria-hidden="true">𝄐</span> Timeline</h2>
         <p class="section__lead reveal">
-          Six steps, roughly in order: what we felt in a real studio, what we learned with our hands, when we started
-          designing, and how the audio side ran next to the build until it all had to meet in one room.
+          Six stages in order: reference listen, hands-on technique, system definition, parallel spatial audio work,
+          composition and capture, then full integration — bowls, WFS, visuals, and tactile paths in one rehearsal loop.
         </p>
 
         <ol class="timeline">
@@ -418,13 +432,14 @@
             <div class="timeline__content glass">
               <h3 class="timeline__label">1 · Experiencing the sound bath at the studio</h3>
               <p class="timeline__text">
-                We went to an actual sound bath first. That sounds obvious, but it mattered: you can read about bowls all
-                day and still not know what the room is supposed to feel like. Low light, slow movement, sound washing
-                around you — it gave us a shared reference for “this is what we are aiming at,” not just a playlist.
+                We went to a real sound bath first. Reading about bowls is one thing; feeling low light, slow movement,
+                and sound moving around the room is another. It gave us a shared baseline for level, pacing, and how much
+                silence belongs between gestures — the stuff you do not get from a stereo demo track.
               </p>
               <p class="timeline__text">
-                It also made clear the project was never only about loudness or clarity. The body picks up pressure,
-                vibration, and space as much as the ears do. We carried that into everything after.
+                It also sharpened the brief: this was never “make it loud.” Pressure in the air, vibration through the
+                floor or seat, and where your eyes rest matter as much as frequency content — exactly the mix we later
+                tried to rebuild with WFS, exciters, lighting, and tactile paths.
               </p>
               <div class="timeline__media-grid">
                 <img
@@ -459,13 +474,14 @@
             <div class="timeline__content glass">
               <h3 class="timeline__label">2 · Trying the bowls ourselves</h3>
               <p class="timeline__text">
-                Back at school we put bowls on the floor and tried to play them the way you are supposed to — soft
-                contact, steady motion, not poking the metal like it owes you money. It was awkward at first, which was
-                useful: you only learn how touchy these things are when your own wrist is doing the work.
+                On campus we put bowls on the floor and learned the physical technique — soft contact, steady motion,
+                where the mallet lands on the wall. Awkward at first, which helped: you only see how sensitive the metal
+                is when your own hand is on the mallet.
               </p>
               <p class="timeline__text">
-                Small changes in angle, speed, or where the mallet lands made a bigger difference than we expected. That
-                fed directly into what we later asked motors to repeat (and what we decided was too finicky to fake).
+                Tiny changes in angle, speed, or pressure changed the partials more than any EQ move. That set the bar for
+                what “good” meant once we swapped the hand for an exciter: repeatable energy into the bowl, not a sample
+                with reverb slapped on top.
               </p>
               <img
                 class="timeline__img js-encoded-src"
@@ -482,14 +498,14 @@
             <div class="timeline__content glass">
               <h3 class="timeline__label">3 · Understanding what needed to be automated</h3>
               <p class="timeline__text">
-                After listening and then playing, we started naming what had to show up in the final piece: long decays,
-                enough silence, a sense of motion in the room, and hardware that could hit the same way twice on a Tuesday
-                night without a human standing over every bowl.
+                After reference listening and manual playing, we wrote down what the installation actually had to do:
+                long decays, enough silence, spatial motion through the WFS array, physically excited bowls (not only
+                playback), lighting and visuals that track the same arc, and tactile or scent layers that stay in sync.
               </p>
               <p class="timeline__text">
-                That was the shift from “we liked a feeling” to “here is what the system is responsible for.” Not every
-                detail became a motor — some stayed in the mix, the lights, or the seating — but we finally had a list we
-                could argue about instead of guessing.
+                That turned observation into design decisions: which problems belong to Max/MSP and the speaker grid,
+                which belong to TouchDesigner and DMX, and where OSC ties them together. Not every gesture became a motor,
+                but we finally had a spec we could test instead of vibe-checking alone.
               </p>
               <img
                 class="timeline__img js-encoded-src"
@@ -506,18 +522,18 @@
             <div class="timeline__content glass">
               <h3 class="timeline__label">4 · Building the sound design in parallel</h3>
               <p class="timeline__text">
-                While the bowl side of the group was still mostly mallets and tape, another thread was the speaker rig:
-                where to put drivers, how wide to paint the stereo field, and how to keep the bowls from feeling like a
-                sticker on top of a track instead of part of the same space.
+                In parallel with bowl prototyping, we stood up the spatial side: WFS array tuning, panning and distance
+                cues, and multichannel material that could share the room with live bowl energy instead of masking it.
+                The question was always whether the speakers and the metal sounded like one field.
               </p>
               <p class="timeline__text">
-                This phase was less about “correct” audio and more about shaping the environment — what you notice when
-                you stop looking at your phone and actually lie down for twenty minutes.
+                This stretch was less about “correct” in a mastering sense and more about shaping an environment — what
+                you notice lying on the floor for twenty minutes when the array is doing its job.
               </p>
               <img
                 class="timeline__img js-encoded-src"
                 data-filename="sound-design-parallel.png"
-                alt="Laptop with Logic Pro open during a session — editing tracks on the floor in the studio."
+                alt="DAW session on a laptop — editing multichannel and spatial material alongside WFS tests."
                 width="900"
                 height="600"
                 loading="lazy"
@@ -529,13 +545,14 @@
             <div class="timeline__content glass">
               <h3 class="timeline__label">5 · Writing and recording the music</h3>
               <p class="timeline__text">
-                We sketched material on paper and in the DAW, then recorded passes and listened back in the same room we
-                hoped to install in. Nothing fancy — mostly marking what felt too busy, what needed more air, and which
-                takes still sounded kind after a long day.
+                We wrote sketches on paper and in the DAW, then recorded passes through the same speaker layout we were
+                iterating for WFS — same room, same rough geometry, so we were not fooling ourselves with headphones
+                only.
               </p>
               <p class="timeline__text">
-                The point was to see how composed sound would sit next to live bowl energy once the physical rig showed
-                up. Some ideas survived; some got cut once we heard them against real strikes.
+                The test was always compositional sound against physical bowl strikes: what needed more air, what fought
+                the transients from the exciters, and what still felt kind after a long day. Plenty of ideas died once they
+                met the real bowls.
               </p>
               <img
                 class="timeline__img js-encoded-src"
@@ -552,13 +569,14 @@
             <div class="timeline__content glass">
               <h3 class="timeline__label">6 · Bringing the system together</h3>
               <p class="timeline__text">
-                Slowly the hardware path, the mixes, and the sensory ideas stopped living in separate chats. We started
-                running partial setups end to end — ugly, sometimes — but enough to tell whether the installation was
-                turning into one thing or three demos in the same room.
+                Integration meant running partial show files end to end — Max/MSP driving WFS and exciters, TouchDesigner
+                carrying picture, DMX, scent, and tactile feeds, OSC keeping the clocks honest. Ugly runs at first; enough
+                to see whether we had one installation or three demos sharing a power strip.
               </p>
               <p class="timeline__text">
-                We are still fixing details, but the picture now is a single system: bowls, electronics, speakers, and
-                light all answering to the same rough schedule instead of fighting each other.
+                We are still chasing noise, latency, and programming bugs, but the goal is a single synchronized system:
+                bowls, spatial audio, visuals, lighting, vibration, and scent cues on one narrative clock instead of
+                independent faders.
               </p>
               <img
                 class="timeline__img js-encoded-src"
@@ -584,8 +602,8 @@
       <div class="section__inner">
         <h2 id="motion-title" class="section__title section__title--music reveal"><span class="section__title-icon" aria-hidden="true">♩</span> Prototype in motion</h2>
         <p class="section__lead reveal">
-          Scroll through this column while the demo stays pinned — an early clip from the first time the rig moved, plus
-          the motor mount we iterated toward for cleaner strikes.
+          Scroll while the clip stays pinned — early exciter motion next to the mount we kept revising so strikes stay
+          repeatable next to the spatial mix.
         </p>
 
         <div class="motion-layout">
@@ -612,8 +630,8 @@
             <article class="motion-panel glass reveal">
               <h3 class="motion-panel__title">Why a pinned demo</h3>
               <p>
-                Sound-bath pacing is slow; a short clip still helps viewers hear how the strike lands before we talk
-                about code. Keep scrolling — the hardware photo below tracks the same storyline.
+                Slow pacing is the point; a short clip still shows whether the strike lines up with what we are asking
+                from Max and the WFS sends. Scroll for the hardware photo — same storyline, mechanical side.
               </p>
             </article>
 
@@ -668,24 +686,23 @@
         <h2 class="section__title section__title--music reveal"><span class="section__title-icon" aria-hidden="true">𝄌</span> Coda — what we’re learning</h2>
         <div class="reflection__body reveal">
           <p>
-            Prototyping together has meant translating half-finished ideas across tables, laptops, and voice memos. We
-            have gotten better at naming what we hear, not just whether it “works” — a small shift that changes how we
-            iterate.
+            Prototyping has meant dragging half-finished ideas across tables, laptops, and voice memos. We got sharper at
+            naming what we hear — not only whether a patch “works,” but whether it belongs in the same story as the WFS
+            image and the bowl strikes.
           </p>
           <p>
-            Connecting artistic intention to physical systems is slower than drawing a diagram. The bowls reward care;
-            the electronics reward patience. When those two line up, the room changes in a way that is hard to
-            screenshot.
+            Turning a schematic into a room takes longer than drawing it. The bowls reward care; the speaker grid rewards
+            measurement; TouchDesigner rewards patience when a cue drifts by a frame. When those line up, the change is
+            hard to screenshot but easy to feel on the floor.
           </p>
           <p>
-            Testing has been a kind of listening: repeating setups until we trust them, and staying honest when something
-            feels clever but not kind. We are still learning how to carry a full-room listening idea out of imagination
-            and into a real space — one version at a time.
+            Testing stays a kind of listening: repeat a run until we trust the sync, then change one variable. We are still
+            learning how to carry a full-room idea from imagination into a lab without sanding off what made it human.
           </p>
           <p>
-            If there is one thing we want this project page to say, it is this: the installation is not only the objects
-            on the floor — it is also sound, light, touch, and the process of listening together until the room feels a
-            little more generous than when we started.
+            If this page has a thesis, it is that the installation is not the objects alone — it is spatial audio,
+            physically driven bowls, coordinated light and vibration, and the slow work of listening together until the
+            room feels a little more generous than when we started.
           </p>
         </div>
       </div>
@@ -697,7 +714,7 @@
     <div class="site-footer__inner">
       <p class="site-footer__title">Sonic Plunge <span class="site-footer__fermata" aria-hidden="true">𝄐</span></p>
       <p class="site-footer__meta">
-        Carnegie Mellon · multi-sensory sound installation · automated singing bowls · spring prototype
+        Carnegie Mellon · multi-sensory installation · WFS spatial audio · automated bowls · spring prototype
       </p>
       <p class="site-footer__dynamics" aria-hidden="true"><span>p</span> <span>mp</span> <span>mf</span> <span>f</span></p>
       <p class="site-footer__team">

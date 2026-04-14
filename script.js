@@ -33,7 +33,7 @@
     {
       file: "42280396-BB43-4D85-B807-4296FBFA5E47_1_105_c.jpeg",
       caption: "Breadboard, laptop, and a first pass at automated striking.",
-      detail: "First automated passes were ugly and honest — the photo is from when ‘it moves’ was enough of a win."
+      detail: "Early exciter tests: proving we could put repeatable energy into the bowl before worrying about WFS balance."
     },
     {
       file: "DE7A8712-F5CC-4226-87BB-374C4D9D1360_1_105_c.jpeg",
@@ -48,7 +48,7 @@
     {
       file: "E644A49B-2FE8-43AB-9972-EC4FE242BB3B_1_105_c.jpeg",
       caption: "Software and acoustics in the same frame — testing and musical typing.",
-      detail: "Typing parameters while listening — small numerical moves, big timbral shifts."
+      detail: "DAW and bowls in one sightline — checking composed material against what the exciters do in the room."
     },
     {
       file: "8F4B1984-7B11-4C22-BFFE-46967C545A40_1_105_c.jpeg",

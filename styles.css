@@ -531,11 +531,20 @@ body > * {
   }
 }
 
+.hero__dek {
+  margin: 0 auto 1.25rem;
+  max-width: 620px;
+  color: #cfc8bd;
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
 .hero__lede {
   margin: 0 auto 2rem;
   max-width: 560px;
-  color: #cfc8bd;
-  font-size: 1.05rem;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .hero__actions {
@@ -1284,6 +1293,32 @@ body > * {
   filter: brightness(1.04);
 }
 
+/* Multiple images in one timeline step (e.g. studio visit) */
+.timeline__media-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.65rem;
+  margin-top: 0.85rem;
+}
+
+@media (max-width: 720px) {
+  .timeline__media-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 899px) {
+  .timeline__media-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.timeline__media-grid .timeline__img {
+  margin-top: 0;
+  max-height: 240px;
+  min-height: 140px;
+}
+
 /* Gallery */
 .section--gallery {
   border-top: 1px solid var(--line);
@@ -1867,6 +1902,9 @@ main {
 }
 .hero .reveal:nth-child(6) {
   transition-delay: 0.3s;
+}
+.hero .reveal:nth-child(7) {
+  transition-delay: 0.36s;
 }
 
 /* ——— Music theme: spectrum, staff, score texture, ornaments ——— */
