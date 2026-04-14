@@ -408,30 +408,64 @@
       <div class="section__inner">
         <h2 class="section__title section__title--music reveal"><span class="section__title-icon" aria-hidden="true">𝄐</span> Timeline</h2>
         <p class="section__lead reveal">
-          How we got from a real studio session to a system we are still wiring up — bowls on one track, sound and music
-          on another, then both meeting in the middle.
+          Six steps, roughly in order: what we felt in a real studio, what we learned with our hands, when we started
+          designing, and how the audio side ran next to the build until it all had to meet in one room.
         </p>
 
         <ol class="timeline">
           <li class="timeline__item reveal">
             <div class="timeline__marker" aria-hidden="true"></div>
             <div class="timeline__content glass">
-              <h3 class="timeline__label">We started in a studio</h3>
+              <h3 class="timeline__label">1 · Experiencing the sound bath at the studio</h3>
               <p class="timeline__text">
-                We started by experiencing a real sound bath in a studio. That gave us a baseline for what the
-                experience is actually like, beyond just the idea of it.
+                We went to an actual sound bath first. That sounds obvious, but it mattered: you can read about bowls all
+                day and still not know what the room is supposed to feel like. Low light, slow movement, sound washing
+                around you — it gave us a shared reference for “this is what we are aiming at,” not just a playlist.
               </p>
-              <p class="timeline__detail">
-                <em>Photo placeholder — we will add a shot from that visit when we have one we like.</em>
+              <p class="timeline__text">
+                It also made clear the project was never only about loudness or clarity. The body picks up pressure,
+                vibration, and space as much as the ears do. We carried that into everything after.
               </p>
+              <div class="timeline__media-grid">
+                <img
+                  class="timeline__img js-encoded-src"
+                  data-filename="3 women.jpeg"
+                  alt="People in a studio during a sound bath–style session."
+                  width="400"
+                  height="300"
+                  loading="lazy"
+                />
+                <img
+                  class="timeline__img js-encoded-src"
+                  data-filename="CADA07A9-0632-461E-82FF-3EFE9F602FF4.png"
+                  alt="Studio scene from our first sound bath visit."
+                  width="400"
+                  height="300"
+                  loading="lazy"
+                />
+                <img
+                  class="timeline__img js-encoded-src"
+                  data-filename="Screen Shot 2023-07-01 at 2.32.26 PM.jpeg"
+                  alt="Reference photo from the studio visit."
+                  width="400"
+                  height="300"
+                  loading="lazy"
+                />
+              </div>
             </div>
           </li>
           <li class="timeline__item reveal">
             <div class="timeline__marker" aria-hidden="true"></div>
             <div class="timeline__content glass">
-              <h3 class="timeline__label">Playing the bowls ourselves</h3>
+              <h3 class="timeline__label">2 · Trying the bowls ourselves</h3>
               <p class="timeline__text">
-                After that, we tried playing the bowls ourselves to understand the technique and what affects the sound.
+                Back at school we put bowls on the floor and tried to play them the way you are supposed to — soft
+                contact, steady motion, not poking the metal like it owes you money. It was awkward at first, which was
+                useful: you only learn how touchy these things are when your own wrist is doing the work.
+              </p>
+              <p class="timeline__text">
+                Small changes in angle, speed, or where the mallet lands made a bigger difference than we expected. That
+                fed directly into what we later asked motors to repeat (and what we decided was too finicky to fake).
               </p>
               <img
                 class="timeline__img js-encoded-src"
@@ -446,10 +480,16 @@
           <li class="timeline__item reveal">
             <div class="timeline__marker" aria-hidden="true"></div>
             <div class="timeline__content glass">
-              <h3 class="timeline__label">What to recreate, what to automate</h3>
+              <h3 class="timeline__label">3 · Understanding what needed to be automated</h3>
               <p class="timeline__text">
-                Through that process, we began to figure out what parts of the experience we would need to recreate and
-                what could be automated.
+                After listening and then playing, we started naming what had to show up in the final piece: long decays,
+                enough silence, a sense of motion in the room, and hardware that could hit the same way twice on a Tuesday
+                night without a human standing over every bowl.
+              </p>
+              <p class="timeline__text">
+                That was the shift from “we liked a feeling” to “here is what the system is responsible for.” Not every
+                detail became a motor — some stayed in the mix, the lights, or the seating — but we finally had a list we
+                could argue about instead of guessing.
               </p>
               <img
                 class="timeline__img js-encoded-src"
@@ -464,44 +504,61 @@
           <li class="timeline__item reveal">
             <div class="timeline__marker" aria-hidden="true"></div>
             <div class="timeline__content glass">
-              <h3 class="timeline__label">At the same time: sound design and music</h3>
+              <h3 class="timeline__label">4 · Building the sound design in parallel</h3>
               <p class="timeline__text">
-                At the same time, we were working on the sound design. We started building out a multi-speaker setup,
-                experimenting with how audio moves in space. Alongside that, we began writing and composing the music,
-                followed by recording and testing different versions.
+                While the bowl side of the group was still mostly mallets and tape, another thread was the speaker rig:
+                where to put drivers, how wide to paint the stereo field, and how to keep the bowls from feeling like a
+                sticker on top of a track instead of part of the same space.
               </p>
-              <div class="materials">
-                <ul class="materials__list">
-                  <li>
-                    <span class="materials__tag">Sound design</span>
-                    Multi-speaker layout and how sound travels — panning, distance, and whether the bowls still feel like
-                    the center of the room.
-                  </li>
-                  <li>
-                    <span class="materials__tag">Writing</span>
-                    Composing and revising material that fits the slow arc we are aiming for.
-                  </li>
-                  <li>
-                    <span class="materials__tag">Recording</span>
-                    Capturing takes and testing versions so we are not guessing what changed between listens.
-                  </li>
-                </ul>
-              </div>
-              <p class="timeline__detail">
-                <em>Photo placeholder — e.g. speakers, DAW, or a session in progress.</em>
+              <p class="timeline__text">
+                This phase was less about “correct” audio and more about shaping the environment — what you notice when
+                you stop looking at your phone and actually lie down for twenty minutes.
               </p>
+              <img
+                class="timeline__img js-encoded-src"
+                data-filename="sound-design-parallel.png"
+                alt="Laptop with Logic Pro open during a session — editing tracks on the floor in the studio."
+                width="900"
+                height="600"
+                loading="lazy"
+              />
             </div>
           </li>
           <li class="timeline__item reveal">
             <div class="timeline__marker" aria-hidden="true"></div>
             <div class="timeline__content glass">
-              <h3 class="timeline__label">Coming together</h3>
+              <h3 class="timeline__label">5 · Writing and recording the music</h3>
               <p class="timeline__text">
-                Over time, both sides started to come together into a single system.
+                We sketched material on paper and in the DAW, then recorded passes and listened back in the same room we
+                hoped to install in. Nothing fancy — mostly marking what felt too busy, what needed more air, and which
+                takes still sounded kind after a long day.
               </p>
-              <p class="timeline__detail">
-                We are still tightening hardware, mixes, and lighting — but the story is the same: studio reference, hands
-                on bowls, parallel audio work, then one installation that has to carry all of it.
+              <p class="timeline__text">
+                The point was to see how composed sound would sit next to live bowl energy once the physical rig showed
+                up. Some ideas survived; some got cut once we heard them against real strikes.
+              </p>
+              <img
+                class="timeline__img js-encoded-src"
+                data-filename="E644A49B-2FE8-43AB-9972-EC4FE242BB3B_1_105_c.jpeg"
+                alt="Laptops with audio software and a singing bowl with wires on a studio floor."
+                width="800"
+                height="600"
+                loading="lazy"
+              />
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <div class="timeline__marker" aria-hidden="true"></div>
+            <div class="timeline__content glass">
+              <h3 class="timeline__label">6 · Bringing the system together</h3>
+              <p class="timeline__text">
+                Slowly the hardware path, the mixes, and the sensory ideas stopped living in separate chats. We started
+                running partial setups end to end — ugly, sometimes — but enough to tell whether the installation was
+                turning into one thing or three demos in the same room.
+              </p>
+              <p class="timeline__text">
+                We are still fixing details, but the picture now is a single system: bowls, electronics, speakers, and
+                light all answering to the same rough schedule instead of fighting each other.
               </p>
               <img
                 class="timeline__img js-encoded-src"
