@@ -428,11 +428,6 @@
                 and sound moving around the room is another. It gave us a shared baseline for level, pacing, and how much
                 silence belongs between gestures — the stuff you do not get from a stereo demo track.
               </p>
-              <p class="timeline__text">
-                It also sharpened the brief: this was never “make it loud.” Pressure in the air, vibration through the
-                floor or seat, and where your eyes rest matter as much as frequency content — exactly the mix we later
-                tried to rebuild with WFS, exciters, lighting, and tactile paths.
-              </p>
               <div class="timeline__media-grid">
                 <img
                   class="timeline__img js-encoded-src"
@@ -466,14 +461,9 @@
             <div class="timeline__content glass">
               <h3 class="timeline__label">2 · Trying the bowls ourselves</h3>
               <p class="timeline__text">
-                On campus we put bowls on the floor and learned the physical technique — soft contact, steady motion,
-                where the mallet lands on the wall. Awkward at first, which helped: you only see how sensitive the metal
-                is when your own hand is on the mallet.
-              </p>
-              <p class="timeline__text">
-                Tiny changes in angle, speed, or pressure changed the partials more than any EQ move. That set the bar for
-                what “good” meant once we swapped the hand for an exciter: repeatable energy into the bowl, not a sample
-                with reverb slapped on top.
+                On campus we put quartz bowls on the floor and learned the physical technique — soft contact, steady
+                motion, how the mallet meets the rim and outer curve. Awkward at first, which helped: you only feel how
+                responsive the bowl is when your own hand is on the mallet.
               </p>
               <img
                 class="timeline__img js-encoded-src"
@@ -490,15 +480,13 @@
             <div class="timeline__content glass">
               <h3 class="timeline__label">3 · Understanding what needed to be automated</h3>
               <p class="timeline__text">
-                After reference listening and manual playing, we wrote down what the installation actually had to do:
-                long decays, enough silence, spatial motion through the WFS array, physically excited bowls (not only
-                playback), lighting and visuals that track the same arc, and tactile or scent layers that stay in sync.
+                After listening and playing things by hand, we could finally say what had to run without us standing
+                there for every cue. Two jobs mattered most.
               </p>
-              <p class="timeline__text">
-                That turned observation into design decisions: which problems belong to Max/MSP and the speaker grid,
-                which belong to TouchDesigner and DMX, and where OSC ties them together. Not every gesture became a motor,
-                but we finally had a spec we could test instead of vibe-checking alone.
-              </p>
+              <ul class="timeline__list">
+                <li>Automate the sensory experience, letting scents out according to what we need.</li>
+                <li>Automate the mallet hitting the bowl with enough speed.</li>
+              </ul>
               <img
                 class="timeline__img js-encoded-src"
                 data-filename="42280396-BB43-4D85-B807-4296FBFA5E47_1_105_c.jpeg"
@@ -514,13 +502,11 @@
             <div class="timeline__content glass">
               <h3 class="timeline__label">4 · Building the sound design in parallel</h3>
               <p class="timeline__text">
-                In parallel with bowl prototyping, we stood up the spatial side: WFS array tuning, panning and distance
-                cues, and multichannel material that could share the room with live bowl energy instead of masking it.
-                The question was always whether the speakers and the metal sounded like one field.
-              </p>
-              <p class="timeline__text">
-                This stretch was less about “correct” in a mastering sense and more about shaping an environment — what
-                you notice lying on the floor for twenty minutes when the array is doing its job.
+                In parallel with the live bowls, we created the spatial experience. With an array of 64 speakers for Wave
+                Field Synthesis, we could fully immerse the audience within a setting, whether that be a lush forest, a
+                serene ocean, or an abstract space. Programming up a full sound experience, all the focus was in ensuring
+                the sound effects and prerecorded instruments sound just as good as if it were live, as well as play along
+                a totally natural timeline, designing sound that would fill up the rest of the space.
               </p>
               <img
                 class="timeline__img js-encoded-src"
@@ -537,14 +523,12 @@
             <div class="timeline__content glass">
               <h3 class="timeline__label">5 · Writing and recording the music</h3>
               <p class="timeline__text">
-                We wrote sketches on paper and in the DAW, then recorded passes through the same speaker layout we were
-                iterating for WFS — same room, same rough geometry, so we were not fooling ourselves with headphones
-                only.
+                We wrote and recorded music for the video — straight to picture, then mixed and mastered so it would hold
+                up on the room’s speakers.
               </p>
               <p class="timeline__text">
-                The test was always compositional sound against physical bowl strikes: what needed more air, what fought
-                the transients from the exciters, and what still felt kind after a long day. Plenty of ideas died once they
-                met the real bowls.
+                The last step was getting those tracks and the video files ready for playback: formats and levels suited to
+                the projectors and the speaker array for the show.
               </p>
               <img
                 class="timeline__img js-encoded-src"
@@ -561,14 +545,9 @@
             <div class="timeline__content glass">
               <h3 class="timeline__label">6 · Bringing the system together</h3>
               <p class="timeline__text">
-                Integration meant running partial show files end to end — Max/MSP driving WFS and exciters, TouchDesigner
-                carrying picture, DMX, scent, and tactile feeds, OSC keeping the clocks honest. Ugly runs at first; enough
-                to see whether we had one installation or three demos sharing a power strip.
-              </p>
-              <p class="timeline__text">
-                We are still chasing noise, latency, and programming bugs, but the goal is a single synchronized system:
-                bowls, spatial audio, visuals, lighting, vibration, and scent cues on one narrative clock instead of
-                independent faders.
+                The last step was wiring everything so it behaved as one show: the bowls, the speakers in the room, the
+                video, the lights, the vibration, and the scent all starting and changing together instead of each piece
+                on its own. It took a lot of trial runs, but that was the point — one experience, not separate gadgets.
               </p>
               <img
                 class="timeline__img js-encoded-src"
