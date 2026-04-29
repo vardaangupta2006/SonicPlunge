@@ -15,7 +15,7 @@
     • Timeline: .timeline__label and .timeline__text per step
     • Reflection: #reflection section paragraphs
     • Footer: .site-footer lines
-    • Image captions: GALLERY_MAIN and GALLERY_DOCS arrays in script.js
+    • Gallery thumbnails: GALLERY_MAIN and GALLERY_DOCS in script.js (short captions)
     • Demo section: #motion — video path and motor mount image filename
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -284,14 +284,14 @@
             <img
               class="overview__img js-encoded-src"
               data-filename="28129B68-1599-4D47-B1F0-C62D5D88400D_1_105_c.jpeg"
-              alt="Three teammates kneel on a studio floor beside large frosted singing bowls, with a Carnegie Mellon equipment cart and laptop nearby."
+              alt="Three people kneeling by frosted bowls, cart, and laptop."
               width="900"
               height="1200"
               loading="lazy"
             />
             <figcaption class="overview__caption">
-              Early studio sessions: bowls, mallets, and gear in the same frame.
-              <span class="overview__caption-more">Hover the image for a closer look at how we staged the workspace.</span>
+              Bowls, mallets, and a gear cart on the floor.
+              <span class="overview__caption-more">Hover to zoom.</span>
             </figcaption>
           </figure>
         </div>
@@ -426,7 +426,7 @@
                 <img
                   class="timeline__img js-encoded-src"
                   data-filename="3 women.jpeg"
-                  alt="People in a studio during a sound bath–style session."
+                  alt="People lying on mats in a dark studio."
                   width="400"
                   height="300"
                   loading="lazy"
@@ -434,7 +434,7 @@
                 <img
                   class="timeline__img js-encoded-src"
                   data-filename="CADA07A9-0632-461E-82FF-3EFE9F602FF4.png"
-                  alt="Studio scene from our first sound bath visit."
+                  alt="People and bowls in a studio room."
                   width="400"
                   height="300"
                   loading="lazy"
@@ -442,7 +442,7 @@
                 <img
                   class="timeline__img js-encoded-src"
                   data-filename="Screen Shot 2023-07-01 at 2.32.26 PM.jpeg"
-                  alt="Reference photo from the studio visit."
+                  alt="Three people with a gong and microphones."
                   width="400"
                   height="300"
                   loading="lazy"
@@ -462,7 +462,7 @@
               <img
                 class="timeline__img js-encoded-src"
                 data-filename="4C02B986-DC3F-4FE9-81E1-632F753BDD3E_1_105_c.jpeg"
-                alt="Three students gathered around large white singing bowls on a wood studio floor."
+                alt="Three people around white bowls on a wood floor."
                 width="800"
                 height="600"
                 loading="lazy"
@@ -484,7 +484,7 @@
               <img
                 class="timeline__img js-encoded-src"
                 data-filename="42280396-BB43-4D85-B807-4296FBFA5E47_1_105_c.jpeg"
-                alt="Students sit on the floor with a laptop, breadboard, servo, batteries, and a large frosted singing bowl."
+                alt="Laptop, breadboard, wires, and a frosted bowl on the floor."
                 width="800"
                 height="1000"
                 loading="lazy"
@@ -505,7 +505,7 @@
               <img
                 class="timeline__img js-encoded-src"
                 data-filename="sound-design-parallel.png"
-                alt="DAW session on a laptop — editing multichannel and spatial material alongside WFS tests."
+                alt="Laptop screen showing audio tracks next to a bowl."
                 width="900"
                 height="600"
                 loading="lazy"
@@ -527,7 +527,7 @@
               <img
                 class="timeline__img js-encoded-src"
                 data-filename="E644A49B-2FE8-43AB-9972-EC4FE242BB3B_1_105_c.jpeg"
-                alt="Laptops with audio software and a singing bowl with wires on a studio floor."
+                alt="Two laptops and a bowl with cables on the floor."
                 width="800"
                 height="600"
                 loading="lazy"
@@ -546,7 +546,7 @@
               <img
                 class="timeline__img js-encoded-src"
                 data-filename="01B2508E-369B-4F37-A7E3-F2B2082F247F_1_105_c.jpeg"
-                alt="A frosted singing bowl glowing red from a light inside, on a dark floor."
+                alt="Frosted bowl with red light inside."
                 width="800"
                 height="1000"
                 loading="lazy"
@@ -554,7 +554,7 @@
               <img
                 class="timeline__img js-encoded-src"
                 data-filename="finalresult.jpg"
-                alt="Final integrated Sonic Plunge setup result."
+                alt="Wide shot of the room with equipment and people."
                 width="1200"
                 height="900"
                 loading="lazy"
@@ -613,14 +613,14 @@
                 <img
                   class="motion-figure__img js-encoded-src"
                   data-filename="motormount.jpeg"
-                  alt="Motor and mounting hardware positioned for striking a singing bowl — brackets, tape, and alignment in progress."
+                  alt="Motor, bracket, and tape next to a bowl rim."
                   width="900"
                   height="700"
                   loading="lazy"
                 />
               </div>
               <figcaption class="motion-figure__cap">
-                Motor mount snapshot — rigging where small angles matter as much as voltage.
+                Motor taped to a bracket by the bowl.
               </figcaption>
             </figure>
 
@@ -640,15 +640,13 @@
       <div class="section__inner">
         <h2 class="section__title section__title--music reveal"><span class="section__title-icon" aria-hidden="true">♬</span> Gallery</h2>
         <p class="section__lead reveal">
-          Stills from the score — bowls, light, cables, and the people behind them. Hover a thumbnail for a cue; click for
-          the full caption, like opening a measure for a closer read.
+          Photos from the build. Hover a thumbnail; click to open it larger.
         </p>
         <div id="gallery-main" class="gallery gallery--main" aria-label="Project photo gallery"></div>
 
         <h3 class="gallery__subheading reveal"><span class="gallery__subheading-mark" aria-hidden="true">♪</span> Documentation &amp; sketches</h3>
         <p class="gallery__subtext reveal">
-          Meetings, diagrams, and planning snapshots — separate from the studio-floor gallery above. Same hover-and-click
-          behavior as the main grid.
+          Diagrams and planning screenshots. Same hover and click as above.
         </p>
         <div id="gallery-docs" class="gallery gallery--docs" aria-label="Documentation snapshots"></div>
       </div>
